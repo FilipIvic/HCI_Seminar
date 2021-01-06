@@ -1,4 +1,6 @@
-# Search
+# HCI Seminar
+
+Search
 
 Search je funkcionalna komponenta za HCI projekt
 
