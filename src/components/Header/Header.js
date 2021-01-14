@@ -1,12 +1,11 @@
 import React from 'react'
 import styles from './style.module.css'
 import styled from 'styled-components'
-import menuData from '../../data/menuData'
 import Button from '../Button/Button'
+import menuData from '../../data/menuData'
 
 import {Link}  from 'gatsby'
 import {FaBars} from 'react-icons/fa'
-import {AnchorLink} from 'gatsby-plugin-anchor-links'
 
 const Header = () => {
   return (
