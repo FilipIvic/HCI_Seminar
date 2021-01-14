@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './style.module.css'
-import { Link } from 'gatsby'
+import {AnchorLink} from 'gatsby-plugin-anchor-links'
 
-const Button = ({useThisStyle, buttonText}) => (
-  <Link className={styles[useThisStyle || 'button']}>
-      {buttonText}
-  </Link>
+const Button = ({style, text, link}) => (
+  <AnchorLink className={styles[style || 'button']} to={link}>
+      {text}
+  </AnchorLink>
 )
 
 export default Button

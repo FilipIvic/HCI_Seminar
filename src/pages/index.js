@@ -1,8 +1,9 @@
-import React from "react"
+import React from 'react'
+import Header from '../components/Header/Header'
 
 const IndexPage = () => (
   <div>
-    Index
+    <Header></Header>
   </div>
 )
 

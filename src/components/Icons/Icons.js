@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {GiHummingbird, GiHospitalCross} from 'react-icons/gi'
 import {MdError} from 'react-icons/md'
-import {FaCat,FaDog} from 'react-icons/fa'
+import {FaCat,FaDog, FaBars} from 'react-icons/fa'
 
 const Icons = ({icon, color, size}) => {
     if(icon === "cross" )
@@ -13,12 +13,18 @@ const Icons = ({icon, color, size}) => {
         return (<FaCatIcon aliasColor = {color} aliasSize = {size}></FaCatIcon>)
     if(icon === "dog" )
         return (<FaDogIcon aliasColor = {color} aliasSize = {size}></FaDogIcon>)
+    if(icon === "menu" )
+        return (<FabarsIcon aliasColor = {color} aliasSize = {size}></FabarsIcon>)
     else
         return (<MdErrorIcon></MdErrorIcon>)
 }
    
   export default Icons
 
+const GiHospitalCrossIcon = styled(GiHospitalCross)`
+  color: ${({ aliasColor }) => (aliasColor ? aliasColor : 'black')};
+  font-size: ${({ aliasSize }) => (aliasSize ? aliasSize : '3rem')};
+`  
 const GiHummingbirdIcon = styled(GiHummingbird)`
     color: ${({ aliasColor }) => (aliasColor ? aliasColor : 'black')};
     font-size: ${({ aliasSize }) => (aliasSize ? aliasSize : '3rem')}; 
@@ -33,8 +39,7 @@ const FaDogIcon = styled(FaDog)`
     color: ${({ aliasColor }) => (aliasColor ? aliasColor : 'black')};
     font-size: ${({ aliasSize }) => (aliasSize ? aliasSize : '3rem')};
 `
-
-const GiHospitalCrossIcon = styled(GiHospitalCross)`
+const FabarsIcon = styled(FaBars)`
     color: ${({ aliasColor }) => (aliasColor ? aliasColor : 'black')};
     font-size: ${({ aliasSize }) => (aliasSize ? aliasSize : '3rem')};
 `

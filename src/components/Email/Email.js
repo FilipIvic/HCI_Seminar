@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import emailjs from 'emailjs-com';
-import styles from "../Email/style.module.css"
+import styles from '../Email/style.module.css'
 
 const Email = () => {
 
