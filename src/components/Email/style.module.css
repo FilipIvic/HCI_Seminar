@@ -1,0 +1,91 @@
+.container{
+    background: #0c0c0c;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1rem 1rem;
+    color: #fff;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    color: #fff;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.namediv{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    border-color: greenyellow;
+    border-style: solid;
+    margin-bottom: 5px;
+}
+.emaildiv{
+    display: flex;
+    align-items: center;
+    justify-items: center ;
+    margin-bottom: 5px;
+
+    border-color: red;
+    border-style: solid;
+}
+.subjectdiv{
+    display: flex;
+    align-items: center;
+    justify-items: center ;
+    margin-bottom: 5px;
+
+    border-color: blue;
+    border-style: solid;
+}
+.messagediv{
+    display: flex;
+    align-items: center;
+    justify-items: center ;
+    margin-bottom: 5px;
+
+    border-color: yellow;
+    border-style: solid;
+}
+
+.buttondiv{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+
+    border-color: wheat;
+    border-style: solid;
+}
+
+.name{
+    margin: 5px;
+}
+.email{
+    margin: 5px;
+}
+.subject{
+    margin: 5px;
+}
+.message{
+    margin: 5px;
+}
+.button{
+    background: #F26A2E;
+    padding: 16px 40px;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    min-width: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s !important;
+    border-radius: 50px 0px 50px 0px;
+    margin: 10px 10px 10px 10px;
+}
