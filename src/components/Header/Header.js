@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Button from '../Button/Button'
 import menuData from '../../data/menuData'
 
+import {AnchorLink} from 'gatsby-plugin-anchor-links'
 import {Link}  from 'gatsby'
 import {FaBars} from 'react-icons/fa'
 
@@ -18,7 +19,7 @@ const Header = () => {
             return(
               <div className={styles.primaryNavigation}>
                 <ul>
-                  <li><NavLink to={item.link} key={index}>{item.title}</NavLink></li>
+                  <li><NavAnchorLink to={item.link} key={index}>{item.title}</NavAnchorLink></li>
                 </ul>
               </div>
             )
@@ -41,7 +42,7 @@ const Header = () => {
         })}
         </div>
         <div className={styles.buttonContainer}>
-          <Button link="/aa" text="Hitna pomoć"></Button>
+          <Button link="/#anchor" text="Hitna pomoć"></Button>
         </div >
       </nav>
   )
@@ -50,6 +51,15 @@ const Header = () => {
 export default Header
 
 const NavLink = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+`
+const NavAnchorLink = styled(AnchorLink)`
   color: #fff;
   display: flex;
   align-items: center;

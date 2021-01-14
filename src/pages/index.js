@@ -1,12 +1,74 @@
 import React from 'react'
-import Header from '../components/Header/Header'
-import Footer from "../components/Footer/Footer"
+import Layout from '../components/Layout/Layout'
 
 const IndexPage = () => (
-  <div>
-    <Header></Header>
-    <Footer></Footer>
-  </div>
+  <Layout>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div id = "anchor">Pomoć</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div>Index</div>
+    <div id = "kontakt">Kontakt</div>
+  </Layout>
 )
 
 export default IndexPage
