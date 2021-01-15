@@ -1,8 +1,10 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
+import Background from '../components/Background/Background'
 
 const IndexPage = () => (
   <Layout>
+    <Background></Background>
     <div>Index</div>
     <div>Index</div>
     <div>Index</div>

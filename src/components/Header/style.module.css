@@ -1,5 +1,10 @@
+html{
+    --color-1: #F26A2E;
+    --color-2: #077BF1;
+}
+
 .navigation{
-    background: black;
+    background: transparent;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -34,14 +39,14 @@
 }
 
 .primaryNavigation li a {
-    color: gray;
+    color: white;
     text-decoration: none;
     cursor: pointer;
 }
 
 
 .primaryNavigation li a:hover {
-    color: #3ca0e7;
+    color: var(--color-1);
 }
 
 .primaryNavigation ul li ul {
@@ -51,7 +56,7 @@
     position: absolute;
     padding-left: 0;
     left: 0;
-    background: var(--mainColor);
+    background: transparent;
 }
 
 .primaryNavigation ul li:hover>ul,
@@ -73,7 +78,7 @@
 }
 
 .primaryNavigation ul li ul li a:hover {
-    border-left: 2px solid #3ca0e7;
+    border-left: 10px solid var(--color-1);
 }
 
 .buttonContainer{
