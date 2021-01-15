@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './style.module.css'
 import styled from 'styled-components'
 import Button from '../Button/Button'
-import menuData from '../../data/menuData'
+import menuData from '../../data/constants/menuData'
 
 import {AnchorLink} from 'gatsby-plugin-anchor-links'
 import {Link}  from 'gatsby'
