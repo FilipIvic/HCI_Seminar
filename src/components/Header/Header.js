@@ -28,11 +28,11 @@ const Header = () => {
             return (
               <div className={styles.primaryNavigation}>
                 <ul>
-                  <li><NavLink to={item.link} state={{animal: "animal"}}>{item.title}</NavLink>
+                  <li><NavLink to={item.link} state={{animal: "animal", num: 0}}>{item.title}</NavLink>
                     <ul>
                       <li><NavLink to={item.link} state={{animal: "cat", num: 1}}>{item.species[0]}</NavLink></li>
-                      <li><NavLink to={item.link} state={{animal: "dog"}}>{item.species[1]}</NavLink></li>
-                      <li><NavLink to={item.link} state={{animal: "birb"}}>{item.species[2]}</NavLink></li>
+                      <li><NavLink to={item.link} state={{animal: "dog", num: 2}}>{item.species[1]}</NavLink></li>
+                      <li><NavLink to={item.link} state={{animal: "birb", num: 3}}>{item.species[2]}</NavLink></li>
                     </ul>
                   </li>
                 </ul>
