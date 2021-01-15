@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "img": "./images/pet_1.jpg",
+        "img": "../images/pet_1.jpg",
         "alt": "Pet_Alt_1",
         "name": "Pet_Name_1",
         "button": "Pet_Button_1",
@@ -10,7 +10,7 @@
     }, 
     {
         "id":2,
-        "img": "./images/pet_2.jpg",
+        "img": "../images/pet_2.jpg",
         "alt": "Pet_Alt_2",
         "name": "Pet_Name_2",
         "button": "Pet_Button_2",
@@ -19,7 +19,7 @@
     }, 
     {
         "id":3,
-        "img": "./images/pet_3.jpg",
+        "img": "../images/pet_3.jpg",
         "alt": "Pet_Alt_3",
         "name": "Pet_Name_3",
         "button": "Pet_Button_3",
@@ -28,7 +28,7 @@
     }, 
     {
         "id":4,
-        "img": "./images/pet_4.jpg",
+        "img": "../images/pet_4.jpg",
         "alt": "Pet_Alt_4",
         "name": "Pet_Name_4",
         "button": "Pet_Button_4",
@@ -37,7 +37,7 @@
     }, 
     {
         "id":5,
-        "img": "./images/pet_1.jpg",
+        "img": "../images/pet_1.jpg",
         "alt": "Pet_Alt_5",
         "name": "Pet_Name_5",
         "button": "Pet_Button_5",
@@ -46,7 +46,7 @@
     }, 
     {
         "id":6,
-        "img": "./images/pet_2.jpg",
+        "img": "../images/pet_2.jpg",
         "alt": "Pet_Alt_6",
         "name": "Pet_Name_6",
         "button": "Pet_Button_6",
@@ -55,7 +55,7 @@
     }, 
     {
         "id":7,
-        "img": "./images/pet_3.jpg",
+        "img": "../images/pet_3.jpg",
         "alt": "Pet_Alt_7",
         "name": "Pet_Name_7",
         "button": "Pet_Button_7",
@@ -64,7 +64,7 @@
     }, 
     {
         "id":8,
-        "img": "./images/pet_4.jpg",
+        "img": "../images/pet_4.jpg",
         "alt": "Pet_Alt_8",
         "name": "Pet_Name_8",
         "button": "Pet_Button_8",
@@ -73,7 +73,7 @@
     }, 
     {
         "id":9,
-        "img": "./images/pet_1.jpg",
+        "img": "../images/pet_1.jpg",
         "alt": "Pet_Alt_9",
         "name": "Pet_Name_9",
         "button": "Pet_Button_9",
@@ -82,7 +82,7 @@
     }, 
     {
         "id":10,
-        "img": "./images/pet_2.jpg",
+        "img": "../images/pet_2.jpg",
         "alt": "Pet_Alt_10",
         "name": "Pet_Name_10",
         "button": "Pet_Button_10",
@@ -91,7 +91,7 @@
     }, 
     {
         "id":11,
-        "img": "./images/pet_3.jpg",
+        "img": "../images/pet_3.jpg",
         "alt": "Pet_Alt_11",
         "name": "Pet_Name_11",
         "button": "Pet_Button_11",
@@ -100,7 +100,7 @@
     }, 
     {
         "id":12,
-        "img": "./images/pet_4.jpg",
+        "img": "../images/pet_4.jpg",
         "alt": "Pet_Alt_12",
         "name": "Pet_Name_12",
         "button": "Pet_Button_12",
@@ -109,7 +109,7 @@
     },
     {
         "id":13,
-        "img": "./images/pet_4.jpg",
+        "img": "../images/pet_4.jpg",
         "alt": "Pet_Alt_13",
         "name": "Pet_Name_13",
         "button": "Pet_Button_13",
