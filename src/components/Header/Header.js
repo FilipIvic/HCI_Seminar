@@ -12,9 +12,9 @@ const refreshPage = (a) => {
     window.location.reload();
 }
 
-const Header = ({style, style2, refresh}) => {
+const Header = (props) => {
   return (
-      <nav className={styles[style || 'navigation']}>
+      <nav className={styles[props.navigationStyle || 'navigation']}>
         <NavLink to="/">LOGO</NavLink>
         <MenuIcon></MenuIcon>
         <div className={styles.navigationMenu}>
@@ -28,15 +28,15 @@ const Header = ({style, style2, refresh}) => {
               </div>
             )
           }
-          if(refresh === "true"){
+          if(props.refresh){
               return (
                 <div className={styles.primaryNavigation}>
                   <ul>
-                    <li><NavLink to={item.link} onClick={refreshPage} state={{animal: "animal", num: 0}}>{item.title}</NavLink>
-                      <ul className={styles[style2 || 'dropdown']}>
-                        <li><NavLink to={item.link} onClick={refreshPage} state={{animal: "cat", num: 1}}>{item.species[0]}</NavLink></li>
-                        <li><NavLink to={item.link} onClick={refreshPage} state={{animal: "dog", num: 2}}>{item.species[1]}</NavLink></li>
-                        <li><NavLink to={item.link} onClick={refreshPage} state={{animal: "birb", num: 3}}>{item.species[2]}</NavLink></li>
+                    <li><NavLink to={item.link} onClick={refreshPage} state={{num: 0}}>{item.title}</NavLink>
+                      <ul className={styles[props.dropdownStyle || 'dropdown']}>
+                        <li><NavLink to={item.link} onClick={refreshPage} state={{num: 1}}>{item.species[0]}</NavLink></li>
+                        <li><NavLink to={item.link} onClick={refreshPage} state={{num: 2}}>{item.species[1]}</NavLink></li>
+                        <li><NavLink to={item.link} onClick={refreshPage} state={{num: 3}}>{item.species[2]}</NavLink></li>
                       </ul>
                     </li>
                   </ul>
@@ -47,11 +47,11 @@ const Header = ({style, style2, refresh}) => {
             return (
               <div className={styles.primaryNavigation}>
                 <ul>
-                  <li><NavLink to={item.link} state={{animal: "animal", num: 0}}>{item.title}</NavLink>
-                    <ul className={styles[style2 || 'dropdown']}>
-                      <li><NavLink to={item.link} state={{animal: "cat", num: 1}}>{item.species[0]}</NavLink></li>
-                      <li><NavLink to={item.link} state={{animal: "dog", num: 2}}>{item.species[1]}</NavLink></li>
-                      <li><NavLink to={item.link} state={{animal: "birb", num: 3}}>{item.species[2]}</NavLink></li>
+                  <li><NavLink to={item.link} state={{num: 0}}>{item.title}</NavLink>
+                    <ul className={styles[props.dropdownStyle || 'dropdown']}>
+                      <li><NavLink to={item.link} state={{num: 1}}>{item.species[0]}</NavLink></li>
+                      <li><NavLink to={item.link} state={{num: 2}}>{item.species[1]}</NavLink></li>
+                      <li><NavLink to={item.link} state={{num: 3}}>{item.species[2]}</NavLink></li>
                     </ul>
                   </li>
                 </ul>

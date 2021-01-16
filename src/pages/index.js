@@ -3,7 +3,7 @@ import Layout from '../components/Layout/Layout'
 import Background from '../components/Background/Background'
 
 const IndexPage = () => (
-  <Layout style="transparent" style2="transparentDropdown" refresh="false">
+  <Layout navigationStyle="transparent" dropdownStyle="transparentDropdown">
     <Background></Background>
     <div>Index</div>
     <div>Index</div>

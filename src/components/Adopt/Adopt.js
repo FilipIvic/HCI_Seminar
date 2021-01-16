@@ -78,7 +78,6 @@ const Adopt = (props) => {
               </div>
               <div className={styles.petsWrapper}>
                 {pets.map((item, index) => {
-                  const name = item.node.name
                   return(
                     <div className={styles.petCard} key={index}>
                       <Link to={`/${item.node.button}`}> 

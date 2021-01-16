@@ -3,12 +3,15 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import { GlobalStyle } from './GlobalStyles'
 
-const Layout = ({children, style, style2, refresh}) => {
+const Layout = (props) => {
   return (
     <>
       <GlobalStyle></GlobalStyle>
-      <Header style={style} style2={style2} refresh={refresh}></Header>
-      <main>{children}</main>
+      <Header navigationStyle={props.navigationStyle}
+        dropdownStyle={props.dropdownStyle}
+        refresh={props.refresh}>
+      </Header>
+      <main>{props.children}</main>
       <Footer></Footer>
     </>
   )
