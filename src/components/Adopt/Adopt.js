@@ -12,9 +12,9 @@ import {
   Link
 } from 'react-router-dom';
 
-const Pets = ({speciesProps, inputProps, headerProps}) => {
+const Adopt = () => {
      const data = useStaticQuery(graphql`
-     query MyQuery {
+     query MyQuery3 {
         allPetsJson {
           edges {
             node {
@@ -61,14 +61,14 @@ const Pets = ({speciesProps, inputProps, headerProps}) => {
           </Route>
           <Route path="/">
             <div className={styles.productsContainer}>
-              <div className={styles.heading}>{headerProps}</div>
+              <div className={styles.heading}>SVE ŽIVOTINJE</div>
               <div className={styles.inputDiv}>
                 <div></div>
                 <div></div>
                 <input
                     className={styles.inputText}
                     type="text"
-                    placeholder={inputProps}
+                    placeholder="Pretraži sve životinje"
                     onChange={handleChange}
                     value={input}>
                 </input>
@@ -76,24 +76,18 @@ const Pets = ({speciesProps, inputProps, headerProps}) => {
               <div className={styles.productWrapper}>
                 {items.map((item, index) => {
                   const name = item.node.name
-                  const species = item.node.species
-                    if(species === speciesProps){
-                      return(
-                        <div className={styles.productCard} key={index}>
-                            <ProductImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></ProductImg>
-                            <div className={styles.productInfo}> 
-                                <div className={styles.textWrap}>
-                                  <div className={styles.productTitle}>{name}</div>
-                                </div>
-                                <div className={styles.productDescription}>{item.node.description}</div>
-                                <Link to={`/${item.node.button}`}>{item.node.button}</Link>
+                  return(
+                    <div className={styles.productCard} key={index}>
+                        <ProductImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></ProductImg>
+                        <div className={styles.productInfo}> 
+                            <div className={styles.textWrap}>
+                              <div className={styles.productTitle}>{name}</div>
                             </div>
+                            <div className={styles.productDescription}>{item.node.description}</div>
+                            <Link to={`/${item.node.button}`}>{item.node.button}</Link>
                         </div>
-                      )
-                    }
-                    else{
-                      return null;
-                    }
+                    </div>
+                  )
                 })}
               </div>    
             </div>
@@ -103,7 +97,7 @@ const Pets = ({speciesProps, inputProps, headerProps}) => {
     )
 }
 
-export default Pets
+export default Adopt
 
 const ProductImg = styled(Img)`
   height: 100%;
