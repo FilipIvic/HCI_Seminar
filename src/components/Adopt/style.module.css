@@ -2,9 +2,6 @@
     min-height: 100vh;
     color: #fff;
     padding: 5rem calc((100vw - 1300px) / 2);
-
-    border-color: red;
-    border-style: solid;
 }
 
 .heading{
@@ -12,9 +9,6 @@
     text-align: center;
     margin-bottom: 3rem;
     color: #000;
-
-    border-color: blue;
-    border-style: solid;
 }
 
 .logo{
@@ -22,9 +16,6 @@
     text-align: center;
     margin-bottom: 1rem;
     color: #000;
-
-    border-color: blue;
-    border-style: solid;
 }
 
 .input{
@@ -69,9 +60,6 @@
     justify-items: center;
     padding: 0 2rem;
     margin-top: 1rem;
-
-    border-color: pink;
-    border-style: solid;
 }
 
 .productCard{
@@ -81,9 +69,6 @@
     position: relative;
     border-radius: 10px;
     transition: 0.2s ease;
-
-    border-color: purple;
-    border-style: solid;
 }
 
 .productInfo{
@@ -102,33 +87,32 @@
     justify-items: center;
     position: absolute;
     top: 0px; 
-
-    border-color: red;
-    border-style: solid;
-}
-
-.productTitle{
-    font-weight: 400;
-    font-size: 1rem;
-    margin-left: 0.5rem;
-
-    border-color: red;
-    border-style: solid;
-}
-
-.productDescription{
-    position: absolute;
-    top: 50px;
-
-    border-color: blue;
-    border-style: solid;
+    padding: 12rem 5rem 5rem 5rem;
+    margin: 1rem;
 }
 
 .button{
-    position: absolute;
-    top: 100px;
-
-    border-color: red;
-    border-style: solid;
+    color: white;
 }
 
+.text{
+    color: white;
+}
+
+@media screen and (max-width: 1300px){
+    .productWrapper{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .productWrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .productWrapper{
+        grid-template-columns: 1fr;
+    }
+}

@@ -81,11 +81,9 @@ const Adopt = () => {
                       <Link to={`/${item.node.button}`} className={styles.productInfo}> 
                           <ProductImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></ProductImg>
                           <div className={styles.textWrap}>
-                            <div >{name}</div>
-                            <div >{item.node.description}</div>
-                            <Link  to={`/${item.node.button}`}>{item.node.button}</Link>
+                            <Link className={styles.button} to={`/${item.node.button}`}>saznaj više</Link>
+                            <div className={styles.text}>{`o ${item.node.name}`}</div>
                           </div>
-                          
                         </Link>
                     </div>
                   )
@@ -107,9 +105,6 @@ const ProductImg = styled(Img)`
   border-radius: 10px;
   filter: brightness(80%);
   transition: 0.4s cubic-cubic-bezier(0.075, 0.82, 0.165, 1);
-
-  border-color: yellow;
-  border-style: solid;
 
   &:hover {
     filter: brightness(100%)
