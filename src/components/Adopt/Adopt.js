@@ -12,7 +12,7 @@ import {
   Link
 } from 'react-router-dom';
 
-const Adopt = () => {
+const Adopt = (props) => {
      const data = useStaticQuery(graphql`
      query MyQuery3 {
         allPetsJson {
@@ -37,7 +37,7 @@ const Adopt = () => {
       }
     `)
 
-    let items = data.allPetsJson.edges
+    let pets = data.allPetsJson.edges
     const [input, setInput] = useState("")
 
     const handleChange = (e) => {
@@ -48,41 +48,46 @@ const Adopt = () => {
 
       if(1){
         console.log(input.length)
-        items = items.filter((i) => {
-          return (i.node.name.match(input) || i.node.description.match(input) || i.node.species.match(input) || i.node.name.toLowerCase().match(input)) 
+        pets = pets.filter((i) => {
+          return (i.node.name.match(input) ||
+            i.node.description.match(input) ||
+            i.node.species.match(input) ||
+            i.node.name.toLowerCase().match(input)) 
         })
       }
 
     return (
       <Router>
         <Switch>
-          <Route path="/Pet_Button_:id">
-            <Animal />
+          <Route path={props.pathSelector}>
+            <Animal/>
           </Route>
-          <Route path="/">
-            <div className={styles.productsContainer}>
-              <div className={styles.heading}>SVE ŽIVOTINJE</div>
+          <Route path={props.pat}>
+            <div className={styles.petsContainer}>
+              <div className={styles.heading}>{props.heading}</div>
               <div className={styles.inputDiv}>
                 <div></div>
                 <div></div>
                 <input
                     className={styles.inputText}
-                    type="text"
-                    placeholder="Pretraži sve životinje"
+                    type={props.type}
+                    placeholder={props.placeholder}
                     onChange={handleChange}
                     value={input}>
                 </input>
               </div>
-              <div className={styles.productWrapper}>
-                {items.map((item, index) => {
+              <div className={styles.petsWrapper}>
+                {pets.map((item, index) => {
                   const name = item.node.name
                   return(
-                    <div className={styles.productCard} key={index}>
-                      <Link to={`/${item.node.button}`} className={styles.productInfo}> 
-                          <ProductImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></ProductImg>
-                          <div className={styles.textWrap}>
-                            <Link className={styles.button} to={`/${item.node.button}`}>saznaj više</Link>
-                            <div className={styles.text}>{`o ${item.node.name}`}</div>
+                    <div className={styles.petCard} key={index}>
+                      <Link to={`/${item.node.button}`}> 
+                          <PetImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></PetImg>
+                          <div className={styles.petInfo}>
+                            <div className={styles.textWrap}>
+                              <div className={styles.petName}>{`${props.nameText} ${item.node.name}`}</div>
+                            </div>
+                              <Link className={styles.button} to={`/${item.node.button}`}>{props.buttonText}</Link>
                           </div>
                         </Link>
                     </div>
@@ -98,10 +103,10 @@ const Adopt = () => {
 
 export default Adopt
 
-const ProductImg = styled(Img)`
+const PetImg = styled(Img)`
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: relative;
   border-radius: 10px;
   filter: brightness(80%);
   transition: 0.4s cubic-cubic-bezier(0.075, 0.82, 0.165, 1);

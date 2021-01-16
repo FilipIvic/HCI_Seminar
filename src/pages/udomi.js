@@ -8,7 +8,13 @@ const UdomiMePage = ({location}) => {
     if(location.state.num === 0){
       return(
         <Layout refresh="true">
-          <Adopt></Adopt>
+          <Adopt heading="Sve Životinje"
+            buttonText="Odaberi mene!!"
+            nameText="Bok! Ja sam"
+            placeholder="Pretraži sve životinje"
+            type="text"
+            path="/"
+            pathSelector="/Pet_Button_:id"></Adopt>
         </Layout>
       )
     }

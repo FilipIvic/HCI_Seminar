@@ -1,6 +1,10 @@
-.productsContainer{
+html{
+    --color-1: #F26A2E;
+    --color-2: #077BF1;
+}
+
+.petsContainer{
     min-height: 100vh;
-    color: #fff;
     padding: 5rem calc((100vw - 1300px) / 2);
 }
 
@@ -8,14 +12,14 @@
     font-size: clamp(1.2rem, 5vw, 3rem);
     text-align: center;
     margin-bottom: 3rem;
-    color: #000;
+    color: var(--color-1);
 }
 
 .logo{
     font-size: clamp(1rem, 2vw, 2rem);
     text-align: center;
     margin-bottom: 1rem;
-    color: #000;
+    color: var(--color-1);
 }
 
 .input{
@@ -38,12 +42,12 @@
 }
 
 .inputText::placeholder {
-    color: #B0BEC5;
+    color: var(--color-1);
 }
 
 .inputText:focus {
     outline: none;
-    box-shadow: 0.3rem 0.3rem 0.3rem black;
+    box-shadow: 0.3rem 0.3rem 0.3rem var(--color-1);
 }
 
 .inputDiv{
@@ -52,7 +56,7 @@
     padding: 0 2.3rem;
 }
 
-.productWrapper{
+.petsWrapper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -62,7 +66,8 @@
     margin-top: 1rem;
 }
 
-.productCard{
+.petCard{
+    line-height: 2;
     width: 100%;
     height: 300px;
     width: 300px;
@@ -71,48 +76,102 @@
     transition: 0.2s ease;
 }
 
-.productInfo{
-    position: relative;
+.petInfo{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
-    height: 100%;
-    max-width: 100%;
 }
 
 .textWrap{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-items: center;
     position: absolute;
-    top: 0px; 
-    padding: 12rem 5rem 5rem 5rem;
-    margin: 1rem;
+    top: 180px; 
+}
+
+.petName{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    color: var(--color-1);
+    text-shadow: 1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    0px 1px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000,
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000,
+    0px 2px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 0px 0 #000,
+    1px 2px 0 #000,
+    -1px 2px 0 #000,
+    1px -2px 0 #000,
+    -1px -2px 0 #000,
+    2px 1px 0 #000,
+    -2px 1px 0 #000,
+    2px -1px 0 #000,
+    -2px -1px 0 #000;
 }
 
 .button{
-    color: white;
-}
-
-.text{
-    color: white;
+    display: block;
+    position: absolute;
+    top: 210px;
+    color: white; 
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    0px 1px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000,
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000,
+    0px 2px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 0px 0 #000,
+    1px 2px 0 #000,
+    -1px 2px 0 #000,
+    1px -2px 0 #000,
+    -1px -2px 0 #000,
+    2px 1px 0 #000,
+    -2px 1px 0 #000,
+    2px -1px 0 #000,
+    -2px -1px 0 #000;
 }
 
 @media screen and (max-width: 1300px){
-    .productWrapper{
+    .petsWrapper{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media screen and (max-width: 1000px){
-    .productWrapper{
+    .petsWrapper{
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (max-width: 700px){
-    .productWrapper{
+    .petsWrapper{
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .petInfo{
+        padding: 0 1rem;
     }
 }
