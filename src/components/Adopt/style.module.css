@@ -75,9 +75,9 @@
 }
 
 .productCard{
-    line-height: 2;
     width: 100%;
-    height: 500px;
+    height: 300px;
+    width: 300px;
     position: relative;
     border-radius: 10px;
     transition: 0.2s ease;
@@ -87,21 +87,23 @@
 }
 
 .productInfo{
+    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
-
-    border-color: green;
-    border-style: solid;
+    justify-items: center;
+    height: 100%;
+    max-width: 100%;
 }
 
 .textWrap{
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-items: center;
     position: absolute;
-    top: 350px; 
+    top: 0px; 
 
-    border-color: greenyellow;
+    border-color: red;
     border-style: solid;
 }
 
@@ -116,9 +118,17 @@
 
 .productDescription{
     position: absolute;
-    top: 395px;
+    top: 50px;
 
     border-color: blue;
+    border-style: solid;
+}
+
+.button{
+    position: absolute;
+    top: 100px;
+
+    border-color: red;
     border-style: solid;
 }
 

@@ -77,7 +77,7 @@ const Pets = ({speciesProps, inputProps, headerProps}) => {
                 {items.map((item, index) => {
                   const name = item.node.name
                   const species = item.node.species
-                    if(species === speciesProps){
+                    if(species === speciesProps ){
                       return(
                         <div className={styles.productCard} key={index}>
                             <ProductImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></ProductImg>

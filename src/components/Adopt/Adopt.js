@@ -78,14 +78,15 @@ const Adopt = () => {
                   const name = item.node.name
                   return(
                     <div className={styles.productCard} key={index}>
-                        <ProductImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></ProductImg>
-                        <div className={styles.productInfo}> 
-                            <div className={styles.textWrap}>
-                              <div className={styles.productTitle}>{name}</div>
-                            </div>
-                            <div className={styles.productDescription}>{item.node.description}</div>
-                            <Link to={`/${item.node.button}`}>{item.node.button}</Link>
-                        </div>
+                      <Link to={`/${item.node.button}`} className={styles.productInfo}> 
+                          <ProductImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></ProductImg>
+                          <div className={styles.textWrap}>
+                            <div >{name}</div>
+                            <div >{item.node.description}</div>
+                            <Link  to={`/${item.node.button}`}>{item.node.button}</Link>
+                          </div>
+                          
+                        </Link>
                     </div>
                   )
                 })}
@@ -101,8 +102,8 @@ export default Adopt
 
 const ProductImg = styled(Img)`
   height: 100%;
-  max-width: 100%;
-  position: relative;
+  width: 100%;
+  position: absolute;
   border-radius: 10px;
   filter: brightness(80%);
   transition: 0.4s cubic-cubic-bezier(0.075, 0.82, 0.165, 1);

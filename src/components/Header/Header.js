@@ -8,7 +8,11 @@ import {AnchorLink} from 'gatsby-plugin-anchor-links'
 import {Link}  from 'gatsby'
 import {FaBars} from 'react-icons/fa'
 
-const Header = ({style, style2}) => {
+const refreshPage = (a) => {
+    window.location.reload();
+}
+
+const Header = ({style, style2, refresh}) => {
   return (
       <nav className={styles[style || 'navigation']}>
         <NavLink to="/">LOGO</NavLink>
@@ -23,6 +27,21 @@ const Header = ({style, style2}) => {
                 </ul>
               </div>
             )
+          }
+          if(refresh === "true"){
+              return (
+                <div className={styles.primaryNavigation}>
+                  <ul>
+                    <li><NavLink to={item.link} onClick={refreshPage} state={{animal: "animal", num: 0}}>{item.title}</NavLink>
+                      <ul className={styles[style2 || 'dropdown']}>
+                        <li><NavLink to={item.link} onClick={refreshPage} state={{animal: "cat", num: 1}}>{item.species[0]}</NavLink></li>
+                        <li><NavLink to={item.link} onClick={refreshPage} state={{animal: "dog", num: 2}}>{item.species[1]}</NavLink></li>
+                        <li><NavLink to={item.link} onClick={refreshPage} state={{animal: "birb", num: 3}}>{item.species[2]}</NavLink></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              )
           }
           else{
             return (
