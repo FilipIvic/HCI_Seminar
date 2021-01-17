@@ -15,7 +15,7 @@ const refreshPage = (a) => {
 const Header = (props) => {
   return (
       <nav className={styles[props.navigationStyle || 'navigation']}>
-        <NavLink to="/">LOGO</NavLink>
+        <NavLink to="/">{props.logo}</NavLink>
         <MenuIcon></MenuIcon>
         <div className={styles.navigationMenu}>
         {menuData.map((item, index) => {
@@ -61,7 +61,7 @@ const Header = (props) => {
         })}
         </div>
         <div className={styles.buttonContainer}>
-          <Button link="/#anchor" text="Hitna pomoć"></Button>
+          <Button link="/#anchor" text={props.buttonText}></Button>
         </div >
       </nav>
   )

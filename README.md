@@ -11,6 +11,8 @@ npm add react-icons
 
 npm i gatsby-plugin-anchor-links
 
+npm install dotenv
+
 npm install gatsby-transformer-json
 
 ## gatsby.config.js editirat
@@ -63,4 +65,19 @@ plugins: [
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
+```
+
+npm install gatsby-source-contentful
+
+## gatsby.config.js editirat
+
+```
+{
+  resolve: `gatsby-source-contentful`,
+  options: {
+    spaceId: process.env.SPACE_ID,
+    accessToken: process.env.ACCESS_KEY,
+    downloadLocal: true,
+  }
+}
 ```

@@ -9,7 +9,9 @@ const Layout = (props) => {
       <GlobalStyle></GlobalStyle>
       <Header navigationStyle={props.navigationStyle}
         dropdownStyle={props.dropdownStyle}
-        refresh={props.refresh}>
+        refresh={props.refresh}
+        logo={props.logo}
+        buttonText={props.buttonText}>
       </Header>
       <main>{props.children}</main>
       <Footer></Footer>
