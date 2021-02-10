@@ -77,16 +77,16 @@ const Adopt = (props) => {
                 </input>
               </div>
               <div className={styles.petsWrapper}>
-                {pets.map((item, index) => {
+                {pets.map((pet, index) => {
                   return(
                     <div className={styles.petCard} key={index}>
-                      <Link to={`/${item.node.button}`}> 
-                          <PetImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></PetImg>
+                      <Link to={`/${pet.node.button}`}> 
+                          <PetImg alt={pet.node.alt} fluid = {pet.node.img.childImageSharp.fluid}></PetImg>
                           <div className={styles.petInfo}>
                             <div className={styles.textWrap}>
-                              <div className={styles.petName}>{`${props.nameText} ${item.node.name}`}</div>
+                              <div className={styles.petName}>{`${props.nameText} ${pet.node.name}`}</div>
                             </div>
-                              <Link className={styles.button} to={`/${item.node.button}`}>{props.buttonText}</Link>
+                              <Link className={styles.button} to={`/${pet.node.button}`}>{props.buttonText}</Link>
                           </div>
                         </Link>
                     </div>

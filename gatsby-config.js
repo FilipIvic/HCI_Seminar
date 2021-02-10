@@ -1,5 +1,8 @@
 require("dotenv").config()
 
+process.env.SPACE_ID
+process.env.ACCESS_KEY
+
 module.exports = {
   siteMetadata: {
     title: `Veterinarska Stanica Ivić`,

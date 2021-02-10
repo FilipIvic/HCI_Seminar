@@ -1,0 +1,26 @@
+.blogContainer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 5rem calc((100vw - 1300px) / 2);
+}
+   
+.list {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: fit-content;
+  padding: 5rem;
+}
+  
+.list li {
+  list-style: none;
+  width: min-content;
+  padding: 2rem;
+}
+  
+.list li span {
+  word-wrap: break-word;
+}
