@@ -110,12 +110,25 @@ html{
     color: white; 
 }
 
+.headerMobile{
+    display: none;
+}
+
 @media screen and (max-width: 1000px){
     .navigationMenu{
         display: none;
     }
     .buttonContainer{
         display: none;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .headerMobile{
+        display: block;
+        font-size: 1.8rem;
+        cursor:pointer;
     }
 }
 

@@ -11,6 +11,8 @@ npm add react-icons
 
 npm i gatsby-plugin-anchor-links
 
+npm i react-responsive
+
 npm install dotenv
 
 npm install gatsby-transformer-json

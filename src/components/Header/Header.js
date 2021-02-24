@@ -3,20 +3,28 @@ import styles from './style.module.css'
 import styled from 'styled-components'
 import Button from '../Button/Button'
 import menuData from '../../data/constants/menuData'
+import HeaderMobile from '../HeaderMobile/HeaderMobile'
 
 import {AnchorLink} from 'gatsby-plugin-anchor-links'
 import {Link}  from 'gatsby'
-import {FaBars} from 'react-icons/fa'
+// import {FaBars} from 'react-icons/fa'
 
 const refreshPage = (a) => {
     window.location.reload();
 }
 
 const Header = (props) => {
-  return (
+  return(
       <nav className={styles[props.navigationStyle || 'navigation']}>
         <NavLink to="/">{props.logo}</NavLink>
-        <MenuIcon></MenuIcon>
+        {/* <Menu></Menu> */}
+        <div className={styles.headerMobile}>
+          <HeaderMobile navigationStyle={props.navigationStyle}
+          dropdownStyle={props.dropdownStyle}
+          refresh={props.refresh}
+          logo={props.logo}
+          buttonText={props.buttonText}></HeaderMobile>
+        </div>
         <div className={styles.navigationMenu}>
         {menuData.map((item, index) => {
           if(item.link !== "/udomi"){
@@ -91,17 +99,17 @@ const NavAnchorLink = styled(AnchorLink)`
   height: 100%;
   cursor: pointer;
 `
-const MenuIcon = styled(FaBars)`
-  display: none;
-  color: #fff;
+// const Menu = styled(FaBars)`
+//   display: none;
+//   color: #fff;
 
-  @media screen and (max-width: 1000px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
-    font-size: 1.8rem;
-    cursor:pointer;
-  }
-`
+//   @media screen and (max-width: 1000px) {
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     transform: translate(-100%, 75%);
+//     font-size: 1.8rem;
+//     cursor:pointer;
+//   }
+// `
