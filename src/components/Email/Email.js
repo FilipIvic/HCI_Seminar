@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import emailjs from 'emailjs-com';
 import styles from '../Email/style.module.css'
 
-const Email = () => {
+const Email = (props) => {
 
   const [input1, setInput1] = useState("")
   const [input2, setInput2] = useState("")
@@ -51,29 +51,33 @@ const Email = () => {
   }
 
   return (
-      <div>
-        <div className={styles.container}>
+    <div>
+      <div className={styles.container}>
         <form name="myForm" onSubmit={sendEmail}>
-                <div className={styles.form}>
-                    <div className={styles.namediv}>
-                        <input type="text" className={styles.name} placeholder="Name" name="name" onChange={handleChange1} value={input1}/>
-                    </div>
-                    <div className={styles.emaildiv}>
-                        <input type="email" className={styles.email} placeholder="Email Address" name="email" onChange={handleChange2} value={input2}/>
-                    </div>
-                    <div className={styles.subjectdiv}>
-                        <input type="text" className={styles.subject} placeholder="Subject" name="subject" onChange={handleChange3} value={input3}/>
-                    </div>
-                    <div className={styles.messagediv}>
-                        <textarea className={styles.message} id="" cols="30" rows="8" placeholder="Your message" name="message" onChange={handleChange4} value={input4}></textarea>
-                    </div>
-                    <div className={styles.buttondiv}>
-                        <input type="submit" className={styles.button} value="Send Message"></input>
-                    </div>
-                </div>
-            </form>
-        </div>
+          <div className={styles.form}>
+            <div>
+              <div className={styles.namediv}>
+                  <input type="text" className={styles.name} placeholder="Name" name="name" onChange={handleChange1} value={input1}/>
+              </div>
+              <div className={styles.emaildiv}>
+                  <input type="email" className={styles.email} placeholder="Email Address" name="email" onChange={handleChange2} value={input2}/>
+              </div>
+              <div className={styles.subjectdiv}>
+                  <input type="text" className={styles.subject} placeholder="Subject" name="subject" onChange={handleChange3} value={props.name}/>
+              </div>
+            </div>
+            <div>
+              <div className={styles.messagediv}>
+                  <textarea className={styles.message} id="" cols="40" rows="8" placeholder="Your message" name="message" onChange={handleChange4} value={input4}></textarea>
+              </div>
+            </div>
+          </div>
+          <div className={styles.buttondiv}>
+            <input type="submit" className={styles.button} value="Send Message"></input>
+          </div>
+        </form>
       </div>
+    </div>
   );
 }
 export default Email

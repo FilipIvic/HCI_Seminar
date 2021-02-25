@@ -17,6 +17,14 @@ npm install dotenv
 
 npm install gatsby-transformer-json
 
+npm install react-awesome-reveal --force
+
+npm install jsx-runtime
+
+npm install react-reveal --save
+
+npm install react-player
+
 ## gatsby.config.js editirat
 
 ```

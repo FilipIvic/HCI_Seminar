@@ -19,14 +19,11 @@ const HeaderMobile= (props) => {
                 {menuData.map((item, index) => {
                      if(item.link !== "/udomi"){
                          return(
-                         <NavLink to={item.link}>
-                            <li>{item.title}</li>
-                        </NavLink>)
-                     }else{
+                            <li><NavLink to={item.link}>{item.title}</NavLink></li>
+                         )}else{
                          return(
-                         <NavLink to={item.link} state={{num: 0}}>{item.title}</NavLink>
-                         )
-                     }
+                            <li><NavLink to={item.link} state={{num: 0}}>{item.title}</NavLink></li>
+                        )}
                 })}
             </nav>
         </section>

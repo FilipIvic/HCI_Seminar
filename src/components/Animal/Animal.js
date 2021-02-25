@@ -2,7 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
-import styles from "./style.module.css"
+import styles from './style.module.css'
+import Email from '../Email/Email'
 
 import {
   useParams
@@ -35,26 +36,31 @@ const Animal = () => {
     `)
 
     let items = data.allPetsJson.edges
-
+    
     return(
       <div className={styles.container}>
-        <div className={styles.item}>
-          <h3>Requested topic ID: {id}</h3>
-          {items.map((item) => {
-            if(item.node.id === id){
-              return(
-                <div>
-                  <h3>Ime: {item.node.name}</h3>
-                  <h3>Id: {item.node.id}</h3>
-                  <br></br>
-                  <ProductImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></ProductImg>
-                </div>
-              )
-            }else{
-              return null;
-            }
-          })}
-        </div>
+        
+            <h3>Requested topic ID: {id}</h3>
+            {items.map((item) => {
+              if(item.node.id === id){
+                return(
+                  <div className={styles.wrapper}>
+                    <div className={styles.columnOne}>
+                      <h3>Ime: {item.node.name}</h3>
+                      <h3>Id: {item.node.id}</h3>
+                      <br></br>
+                      <ProductImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></ProductImg>
+                    </div>
+                    <div className={styles.columnTwo}>
+                      <h2>{item.node.description}</h2>
+                      <Email name = {item.node.name}></Email>
+                    </div>
+                  </div>
+                )
+              }else{
+                return null;
+              }
+            })}
       </div>
     )
   }

@@ -1,56 +1,43 @@
 .container{
-    background: #0c0c0c;
+    background: gray;
     display: flex;
     align-items: center;
     justify-content: start;
     padding: 1rem 1rem;
     color: #fff;
+    border-radius: 20px;
 }
 .form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0;
-    color: #fff;
-    line-height: 1.1;
-    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 1rem 0rem 1rem;
 }
 
 .namediv{
     display: flex;
     align-items: center;
     justify-items: center;
-
-    border-color: greenyellow;
-    border-style: solid;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
+
 .emaildiv{
     display: flex;
     align-items: center;
     justify-items: center ;
-    margin-bottom: 5px;
-
-    border-color: red;
-    border-style: solid;
+    margin-bottom: 15px;
 }
+
 .subjectdiv{
     display: flex;
     align-items: center;
     justify-items: center ;
-    margin-bottom: 5px;
-
-    border-color: blue;
-    border-style: solid;
+    margin-bottom: 15px;
 }
+
 .messagediv{
     display: flex;
     align-items: center;
-    justify-items: center ;
-    margin-bottom: 5px;
-
-    border-color: yellow;
-    border-style: solid;
+    justify-items: center;
 }
 
 .buttondiv{
@@ -58,9 +45,6 @@
     align-items: center;
     justify-items: center;
     justify-content: center;
-
-    border-color: wheat;
-    border-style: solid;
 }
 
 .name{
@@ -79,13 +63,13 @@
     background: #F26A2E;
     padding: 16px 40px;
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     outline: none;
     border: none;
-    min-width: 100px;
+    min-width: 50px;
     cursor: pointer;
     text-decoration: none;
     transition: 0.3s !important;
-    border-radius: 50px 0px 50px 0px;
-    margin: 10px 10px 10px 10px;
+    border-radius: 50px;
+    margin-top: 20px;
 }
