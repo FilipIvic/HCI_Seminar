@@ -1,5 +1,10 @@
+html{
+    --color-1: #F26A2E;
+    --color-2: #077BF1;
+}
+
 .container{
-    background: gray;
+    background: var(--color-2);
     display: flex;
     align-items: center;
     justify-content: start;

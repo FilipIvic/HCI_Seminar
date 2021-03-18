@@ -38,29 +38,32 @@ const Animal = () => {
     let items = data.allPetsJson.edges
     
     return(
-      <div className={styles.container}>
-        
-            <h3>Requested topic ID: {id}</h3>
-            {items.map((item) => {
-              if(item.node.id === id){
-                return(
-                  <div className={styles.wrapper}>
-                    <div className={styles.columnOne}>
-                      <h3>Ime: {item.node.name}</h3>
-                      <h3>Id: {item.node.id}</h3>
-                      <br></br>
-                      <ProductImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></ProductImg>
-                    </div>
-                    <div className={styles.columnTwo}>
-                      <h2>{item.node.description}</h2>
-                      <Email name = {item.node.name}></Email>
-                    </div>
+      <div>
+        {/* <h3>Requested topic ID: {id}</h3> */}
+        {items.map((item) => {
+          if(item.node.id === id){
+            return(
+              <div className={styles.animalContainer}>
+                <div className={styles.heading}>{item.node.name}</div>
+                <div className={styles.animalWrapper}>
+                  <div className={styles.columnOne}>
+                    {/* <h3>Ime: {item.node.name}</h3>
+                    <h3>Id: {item.node.id}</h3> */}
+                    <br></br>
+                    <ProductImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></ProductImg>
                   </div>
-                )
-              }else{
-                return null;
-              }
-            })}
+                  <div className={styles.columnTwo}>
+                    <h2>{item.node.description}</h2>
+                    <br></br>
+                    <Email name = {item.node.name}></Email>
+                  </div>
+                </div>
+                </div>
+            )
+          }else{
+            return null;
+          }
+        })}
       </div>
     )
   }
@@ -71,9 +74,7 @@ const Animal = () => {
   height: 500px;
   width: 500px;
   border-radius: 10px;
-
-  border-color: yellow;
-  border-style: solid;
+  box-shadow: 0.2rem 0.2rem 0.2rem black;
 
   &:hover {
     filter: brightness(100%)

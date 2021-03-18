@@ -1,5 +1,21 @@
 .container{
-    padding: 3rem;
+    padding: 5rem calc((100vw - 1300px) / 2);
+
+    border-color: red;
+    border-style: solid;
+}
+
+.serviceWrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    padding: 0 2rem;
+    margin-top: 1rem;
+
+    border-color: pink;
+    border-style: solid;
 }
 
 b {

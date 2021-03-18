@@ -60,7 +60,7 @@ const Pets = ({speciesProps, inputProps, headerProps}) => {
             <Animal />
           </Route>
           <Route path="/">
-            <div className={styles.productsContainer}>
+            <div className={styles.petContainer}>
               <div className={styles.heading}>{headerProps}</div>
               <div className={styles.inputDiv}>
                 <div></div>
@@ -73,21 +73,23 @@ const Pets = ({speciesProps, inputProps, headerProps}) => {
                     value={input}>
                 </input>
               </div>
-              <div className={styles.productWrapper}>
-                {items.map((item, index) => {
-                  const name = item.node.name
-                  const species = item.node.species
-                    if(species === speciesProps ){
+              <div className={styles.petWrapper}>
+                {items.map((pet, index) => {
+                  const name = pet.node.name
+                  const species = pet.node.species
+                    if(species === speciesProps){
                       return(
-                        <div className={styles.productCard} key={index}>
-                            <ProductImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></ProductImg>
-                            <div className={styles.productInfo}> 
+                        <div className={styles.petCard} key={index}>
+                          <Link to={`/${pet.node.button}`}>
+                            <ProductImg alt={pet.node.alt} fluid = {pet.node.img.childImageSharp.fluid}></ProductImg>
+                            <div className={styles.petInfo}> 
                                 <div className={styles.textWrap}>
-                                  <div className={styles.productTitle}>{name}</div>
+                                  <div className={styles.petTitle}>{name}</div>
                                 </div>
-                                <div className={styles.productDescription}>{item.node.description}</div>
-                                <Link to={`/${item.node.button}`}>{item.node.button}</Link>
+                                {/* <div className={styles.productDescription}>{item.node.description}</div> */}
+                                {/* <Link to={`/${item.node.button}`}>{item.node.button}</Link> */}
                             </div>
+                          </Link>
                         </div>
                       )
                     }

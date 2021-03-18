@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "img": "../images/Usluga_1.png",
+        "alt": "Usluga_Alt_1",
+        "name": "Usluga_1",
+        "button": "Pet_Button_1",
+        "description": "Pet_Description_1",
+        "species": "cat"
+    }, 
+    {
+        "id":2,
+        "img": "../images/Usluga_2.png",
+        "alt": "Usluga_Alt_2",
+        "name": "Usluga_2",
+        "button": "Pet_Button_2",
+        "description": "Pet_Description_2",
+        "species": "cat"
+    }, 
+    {
+        "id":3,
+        "img": "../images/Usluga_3.png",
+        "alt": "Usluga_Alt_3",
+        "name": "Usluga_3",
+        "button": "Pet_Button_3",
+        "description": "Pet_Description_3",
+        "species": "cat"
+    }, 
+    {
+        "id":4,
+        "img": "../images/Usluga_4.png",
+        "alt": "Usluga_Alt_4",
+        "name": "Usluga_4",
+        "button": "Pet_Button_4",
+        "description": "Pet_Description_4",
+        "species": "cat"
+    }
+]

@@ -4,6 +4,7 @@ import styles from './style.module.css'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import Animal from '../Animal/Animal'
+import Icons from '../Icons/Icons'
 
 import {
   BrowserRouter as Router,
@@ -84,6 +85,7 @@ const Adopt = (props) => {
                           <PetImg alt={pet.node.alt} fluid = {pet.node.img.childImageSharp.fluid}></PetImg>
                           <div className={styles.petInfo}>
                             <div className={styles.textWrap}>
+                              <Icons icon={pet.node.species} color="#F26A2E" size="1.5rem"></Icons>
                               <div className={styles.petName}>{`${props.nameText} ${pet.node.name}`}</div>
                             </div>
                               <Link className={styles.button} to={`/${pet.node.button}`}>{props.buttonText}</Link>

@@ -2,8 +2,9 @@ import React from 'react'
 import Layout from '../components/Layout/Layout'
 import Background from '../components/Background/Background'
 import Price from '../components/Price/Price'
-import Zoom from 'react-reveal/Zoom';
-import ReactPlayer from 'react-player'
+import Emergency from '../components/Emergency/Emergency'
+import Services from '../components/Services/Services'
+import Zoom from 'react-reveal/Zoom'
 
 const IndexPage = () => (
   <Layout navigationStyle="transparent"
@@ -11,19 +12,15 @@ const IndexPage = () => (
     logo="Veterinarska Stanica Ivić"
     buttonText="Hitna Pomoć!">
     <Background></Background>
-    <Price></Price>
     <Zoom>
-      <p>Markup that will be revealed on scroll</p>
+      <div id = "anchor">Pomoć</div>
+      <Emergency></Emergency>
     </Zoom>
     <Zoom>
-      <div>First Child</div>
-      <div>Second Child</div>
+      <Services></Services>
     </Zoom>
-    <ReactPlayer
-            width="100%"
-            height="100%"
-            url="https://www.youtube.com/watch?v=NPbbLM7TFCk"
-          />
+    {/* <Price></Price> */}
+
     <div>Index</div>
     <div>Index</div>
     <div>Index</div>
@@ -67,7 +64,6 @@ const IndexPage = () => (
     <div>Index</div>
     <div>Index</div>
     <div>Index</div>
-    <div id = "anchor">Pomoć</div>
     <div>Index</div>
     <div>Index</div>
     <div>Index</div>

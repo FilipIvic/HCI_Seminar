@@ -86,7 +86,7 @@ html{
     display: flex;
     align-items: center;
     position: absolute;
-    top: 180px; 
+    top: 220px; 
 }
 
 .petName{
@@ -123,7 +123,7 @@ html{
 .button{
     display: block;
     position: absolute;
-    top: 210px;
+    top: 250px;
     color: white; 
     text-decoration: none;
     text-shadow: 1px 1px 0 #000,

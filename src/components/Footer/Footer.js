@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 import {Link} from 'gatsby'
 import {AnchorLink} from 'gatsby-plugin-anchor-links'
-import Email from '../Email/Email'
 
 const Footer = () => {
     return (
