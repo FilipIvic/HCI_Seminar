@@ -12,7 +12,7 @@ const IndexPage = () => (
     buttonText="Hitna Pomoć!">
     <Background></Background>
     <Zoom>
-      <div id = "anchor">Pomoć</div>
+      <div id = "anchor"></div>
       <Emergency></Emergency>
     </Zoom>
     <Zoom>

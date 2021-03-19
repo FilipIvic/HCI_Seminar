@@ -25,6 +25,10 @@ npm install react-reveal --save
 
 npm install react-player
 
+npm i google-map-react
+
+npm i react-google-maps
+
 ## gatsby.config.js editirat
 
 ```
