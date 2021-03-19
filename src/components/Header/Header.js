@@ -16,14 +16,15 @@ const refreshPage = (a) => {
 const Header = (props) => {
   return(
       <nav className={styles[props.navigationStyle || 'navigation']}>
-        <NavLink to="/">{props.logo}</NavLink>
+        <NavLinkLogo to="/">{props.logo}</NavLinkLogo>
         {/* <Menu></Menu> */}
         <div className={styles.headerMobile}>
           <HeaderMobile navigationStyle={props.navigationStyle}
-          dropdownStyle={props.dropdownStyle}
-          refresh={props.refresh}
-          logo={props.logo}
-          buttonText={props.buttonText}></HeaderMobile>
+            dropdownStyle={props.dropdownStyle}
+            refresh={props.refresh}
+            logo={props.logo}
+            buttonText={props.buttonText}>
+          </HeaderMobile>
         </div>
         <div className={styles.navigationMenu}>
         {menuData.map((item, index) => {
@@ -90,6 +91,21 @@ const NavLink = styled(Link)`
     color: #F26A2E;
   }
 `
+const NavLinkLogo = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: clamp(0.7rem, 3vw, 1.1rem);
+  padding: 0 1rem;
+  height: 110%;
+  cursor: pointer;
+
+  &:hover{
+    color: #F26A2E;
+  }
+`
+
 const NavAnchorLink = styled(AnchorLink)`
   color: #fff;
   display: flex;

@@ -13,7 +13,7 @@ import {
   Link
 } from 'react-router-dom';
 
-const Adopt = (props) => {
+const Adopt = ({heading, buttonText, nameText, placeholder, type, path, pathSelector}) => {
      const data = useStaticQuery(graphql`
      query MyQuery3 {
         allPetsJson {
@@ -60,22 +60,28 @@ const Adopt = (props) => {
     return (
       <Router>
         <Switch>
-          <Route path={props.pathSelector}>
+          <Route path={pathSelector}>
             <Animal/>
           </Route>
-          <Route path={props.pat}>
+          <Route path={path}>
             <div className={styles.petsContainer}>
-              <div className={styles.heading}>{props.heading}</div>
+            <div className={styles.textWrapHeading}>
+              <div className={styles.heading}>{heading}</div>
+              <Icons icon="pets" color="#F26A2E" size="4rem"></Icons>
+            </div>
               <div className={styles.inputDiv}>
                 <div></div>
                 <div></div>
-                <input
-                    className={styles.inputText}
-                    type={props.type}
-                    placeholder={props.placeholder}
-                    onChange={handleChange}
-                    value={input}>
-                </input>
+                <div className={styles.textWrapSearch}>
+                  <Icons icon="search" color="#F26A2E" size="2.5rem"></Icons>
+                  <input
+                      className={styles.inputText}
+                      type={type}
+                      placeholder={placeholder}
+                      onChange={handleChange}
+                      value={input}>
+                  </input>
+                </div>
               </div>
               <div className={styles.petsWrapper}>
                 {pets.map((pet, index) => {
@@ -86,9 +92,9 @@ const Adopt = (props) => {
                           <div className={styles.petInfo}>
                             <div className={styles.textWrap}>
                               <Icons icon={pet.node.species} color="#F26A2E" size="1.5rem"></Icons>
-                              <div className={styles.petName}>{`${props.nameText} ${pet.node.name}`}</div>
+                              <div className={styles.petName}>{`${nameText} ${pet.node.name}`}</div>
                             </div>
-                              <Link className={styles.button} to={`/${pet.node.button}`}>{props.buttonText}</Link>
+                              <Link className={styles.button} to={`/${pet.node.button}`}>{buttonText}</Link>
                           </div>
                         </Link>
                     </div>

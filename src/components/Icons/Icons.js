@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import {GiHummingbird, GiHospitalCross} from 'react-icons/gi'
-import {MdError} from 'react-icons/md'
+import {MdError, MdPets} from 'react-icons/md'
 import {FaCat,FaDog, FaBars} from 'react-icons/fa'
+import {AiOutlineSearch} from 'react-icons/ai'
 
 const Icons = ({icon, color, size}) => {
     if(icon === "cross" )
@@ -15,6 +16,10 @@ const Icons = ({icon, color, size}) => {
         return (<FaDogIcon aliasColor = {color} aliasSize = {size}></FaDogIcon>)
     if(icon === "menu" )
         return (<FabarsIcon aliasColor = {color} aliasSize = {size}></FabarsIcon>)
+    if(icon === "pets" )
+        return (<MdPetsIcon aliasColor = {color} aliasSize = {size}></MdPetsIcon>)
+    if(icon === "search" )
+        return (<AiOutlineSearchIcon aliasColor = {color} aliasSize = {size}></AiOutlineSearchIcon>)
     else
         return (<MdErrorIcon></MdErrorIcon>)
 }
@@ -40,6 +45,14 @@ const FaDogIcon = styled(FaDog)`
     font-size: ${({ aliasSize }) => (aliasSize ? aliasSize : '3rem')};
 `
 const FabarsIcon = styled(FaBars)`
+    color: ${({ aliasColor }) => (aliasColor ? aliasColor : 'black')};
+    font-size: ${({ aliasSize }) => (aliasSize ? aliasSize : '3rem')};
+`
+const MdPetsIcon = styled(MdPets)`
+    color: ${({ aliasColor }) => (aliasColor ? aliasColor : 'black')};
+    font-size: ${({ aliasSize }) => (aliasSize ? aliasSize : '3rem')};
+`
+const AiOutlineSearchIcon = styled(AiOutlineSearch)`
     color: ${({ aliasColor }) => (aliasColor ? aliasColor : 'black')};
     font-size: ${({ aliasSize }) => (aliasSize ? aliasSize : '3rem')};
 `

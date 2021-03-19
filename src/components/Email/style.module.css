@@ -4,13 +4,15 @@ html{
 }
 
 .container{
-    background: var(--color-2);
+    background: var(--color-1);
     display: flex;
     align-items: center;
     justify-content: start;
     padding: 1rem 1rem;
     color: #fff;
     border-radius: 20px;
+    border:solid;
+    border-color: black;
 }
 .form{
     display: grid;
@@ -54,27 +56,44 @@ html{
 
 .name{
     margin: 5px;
+    padding: 5px;
+    border: solid;
+    border-width: 2px;
+    border-color: black;
 }
 .email{
     margin: 5px;
+    padding: 5px;
+    border: solid;
+    border-width: 2px;
+    border-color: black;
 }
 .subject{
     margin: 5px;
+    padding: 5px;
+    border: solid;
+    border-width: 2px;
+    border-color: black;
 }
 .message{
     margin: 5px;
+    padding: 10px;
+    border: solid;
+    border-width: 2px;
+    border-color: black;
 }
 .button{
-    background: #F26A2E;
+    background: var(--color-2);
     padding: 16px 40px;
     color: #fff;
     font-size: 15px;
     outline: none;
-    border: none;
+    border: solid;
     min-width: 50px;
     cursor: pointer;
     text-decoration: none;
     transition: 0.3s !important;
     border-radius: 50px;
+    border-width: 2px;
     margin-top: 20px;
 }

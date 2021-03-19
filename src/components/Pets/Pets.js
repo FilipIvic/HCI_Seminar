@@ -4,6 +4,7 @@ import styles from './style.module.css'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import Animal from '../Animal/Animal'
+import Icons from '../Icons/Icons'
 
 import {
   BrowserRouter as Router,
@@ -12,7 +13,7 @@ import {
   Link
 } from 'react-router-dom';
 
-const Pets = ({speciesProps, inputProps, headerProps}) => {
+const Pets = ({speciesProps, inputProps, headerProps, buttonText}) => {
      const data = useStaticQuery(graphql`
      query MyQuery {
         allPetsJson {
@@ -37,7 +38,7 @@ const Pets = ({speciesProps, inputProps, headerProps}) => {
       }
     `)
 
-    let items = data.allPetsJson.edges
+    let pets = data.allPetsJson.edges
     const [input, setInput] = useState("")
 
     const handleChange = (e) => {
@@ -48,7 +49,7 @@ const Pets = ({speciesProps, inputProps, headerProps}) => {
 
       if(1){
         console.log(input.length)
-        items = items.filter((i) => {
+        pets = pets.filter((i) => {
           return (i.node.name.match(input) || i.node.description.match(input) || i.node.species.match(input) || i.node.name.toLowerCase().match(input)) 
         })
       }
@@ -60,34 +61,37 @@ const Pets = ({speciesProps, inputProps, headerProps}) => {
             <Animal />
           </Route>
           <Route path="/">
-            <div className={styles.petContainer}>
+            <div className={styles.petsContainer}>
+            <div className={styles.textWrapHeading}>
               <div className={styles.heading}>{headerProps}</div>
+              <Icons icon={speciesProps} color="#F26A2E" size="3rem"></Icons>
+            </div>
               <div className={styles.inputDiv}>
                 <div></div>
                 <div></div>
-                <input
-                    className={styles.inputText}
-                    type="text"
-                    placeholder={inputProps}
-                    onChange={handleChange}
-                    value={input}>
-                </input>
+                <div className={styles.textWrapSearch}>
+                  <Icons icon="search" color="#F26A2E" size="2.5rem"></Icons>
+                  <input
+                      className={styles.inputText}
+                      type="text"
+                      placeholder={inputProps}
+                      onChange={handleChange}
+                      value={input}>
+                  </input>
+                </div>
               </div>
-              <div className={styles.petWrapper}>
-                {items.map((pet, index) => {
-                  const name = pet.node.name
-                  const species = pet.node.species
-                    if(species === speciesProps){
+              <div className={styles.petsWrapper}>
+                {pets.map((pet, index) => {
+                    if(pet.node.species === speciesProps){
                       return(
                         <div className={styles.petCard} key={index}>
                           <Link to={`/${pet.node.button}`}>
-                            <ProductImg alt={pet.node.alt} fluid = {pet.node.img.childImageSharp.fluid}></ProductImg>
+                            <PetImg alt={pet.node.alt} fluid = {pet.node.img.childImageSharp.fluid}></PetImg>
                             <div className={styles.petInfo}> 
                                 <div className={styles.textWrap}>
-                                  <div className={styles.petTitle}>{name}</div>
+                                  <div className={styles.petName}>{pet.node.name}</div>
                                 </div>
-                                {/* <div className={styles.productDescription}>{item.node.description}</div> */}
-                                {/* <Link to={`/${item.node.button}`}>{item.node.button}</Link> */}
+                                <Link className={styles.button} to={`/${pet.node.button}`}>{buttonText}</Link>
                             </div>
                           </Link>
                         </div>
@@ -107,16 +111,13 @@ const Pets = ({speciesProps, inputProps, headerProps}) => {
 
 export default Pets
 
-const ProductImg = styled(Img)`
+const PetImg = styled(Img)`
   height: 100%;
   max-width: 100%;
   position: relative;
   border-radius: 10px;
   filter: brightness(80%);
   transition: 0.4s cubic-cubic-bezier(0.075, 0.82, 0.165, 1);
-
-  border-color: yellow;
-  border-style: solid;
 
   &:hover {
     filter: brightness(100%)

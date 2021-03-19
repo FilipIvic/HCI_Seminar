@@ -50,7 +50,7 @@ const Blogs = () => {
 export default Blogs
 
 const PetImg = styled(Img)`
-  min-height: 500px;
+  min-height: 400px;
   width: 500px;
   position: relative;
   border-radius: 10px;

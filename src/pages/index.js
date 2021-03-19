@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
 import Background from '../components/Background/Background'
-import Price from '../components/Price/Price'
 import Emergency from '../components/Emergency/Emergency'
 import Services from '../components/Services/Services'
 import Zoom from 'react-reveal/Zoom'
@@ -19,8 +18,6 @@ const IndexPage = () => (
     <Zoom>
       <Services></Services>
     </Zoom>
-    {/* <Price></Price> */}
-
     <div>Index</div>
     <div>Index</div>
     <div>Index</div>

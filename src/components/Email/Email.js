@@ -57,13 +57,13 @@ const Email = (props) => {
           <div className={styles.form}>
             <div>
               <div className={styles.namediv}>
-                  <input type="text" className={styles.name} placeholder=" Vaše Ime" name="name" onChange={handleChange1} value={input1}/>
+                  <input type="text" className={styles.name} placeholder=" Vaše Ime..." name="name" onChange={handleChange1} value={input1}/>
               </div>
               <div className={styles.emaildiv}>
-                  <input type="email" className={styles.email} placeholder=" Vaša Email Adresa" name="email" onChange={handleChange2} value={input2}/>
+                  <input type="email" className={styles.email} placeholder=" Vaša Email Adresa..." name="email" onChange={handleChange2} value={input2}/>
               </div>
               <div className={styles.subjectdiv}>
-                  <input type="text" className={styles.subject} placeholder=" Predmet" name="subject" onChange={handleChange3} value={props.name}/>
+                  <input type="text" className={styles.subject} placeholder=" Predmet..." name="subject" onChange={handleChange3} value={props.name}/>
               </div>
             </div>
             <div>

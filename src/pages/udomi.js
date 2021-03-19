@@ -13,10 +13,11 @@ const UdomiMePage = ({location}) => {
           <Adopt heading="Sve Životinje"
             buttonText="Odaberi mene!!"
             nameText="Bok! Ja sam"
-            placeholder="Pretraži sve životinje"
+            placeholder="Pretraži sve životinje..."
             type="text"
             path="/"
-            pathSelector="/Pet_Button_:id"></Adopt>
+            pathSelector="/Pet_Button_:id">
+          </Adopt>
         </Layout>
       )
     }
@@ -25,8 +26,11 @@ const UdomiMePage = ({location}) => {
         <Layout refresh="true"
           logo="Veterinarska Stanica Ivić"
           buttonText="Hitna Pomoć!">
-          Udomi_Me
-          <Pets speciesProps="cat" inputProps="Type to search cats..." headerProps="Cate"></Pets>
+          <Pets speciesProps="cat"
+            inputProps="Pretraži mačake..."
+            headerProps="Mace"
+            buttonText="Meow, Udomi Me!">
+          </Pets>
         </Layout>
       )
     }
@@ -35,8 +39,11 @@ const UdomiMePage = ({location}) => {
         <Layout refresh="true"
           logo="Veterinarska Stanica Ivić"
           buttonText="Hitna Pomoć!">
-          Udomi_Me
-          <Pets speciesProps="dog" inputProps="Type to search dogs..." headerProps="Dogo"></Pets>
+          <Pets speciesProps="dog" 
+           inputProps="Pretraži pse..." 
+           headerProps="Paseki"
+           buttonText="Woof, Udomi Me!">
+          </Pets>
         </Layout>
       )
     }
@@ -45,8 +52,11 @@ const UdomiMePage = ({location}) => {
         <Layout refresh="true"
           logo="Veterinarska Stanica Ivić"
           buttonText="Hitna Pomoć!">
-          Udomi_Me
-          <Pets speciesProps="birb" inputProps="Type to search birbs..." headerProps="Birbs"></Pets>
+          <Pets speciesProps="birb" 
+           inputProps="Pretraži ptice..."
+           headerProps="Ptičice"
+           buttonText="Brrrb, Udomi Me!">
+          </Pets>
         </Layout>
       )
     }
