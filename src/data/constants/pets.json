@@ -1,119 +1,227 @@
 [
     {
         "id":1,
-        "img": "../images/Buton.jpg",
-        "alt": "Buton",
-        "name": "Buton",
+        "img": "../images/Albina.jpeg",
+        "alt": "Albina",
+        "name": "Albina",
         "button": "Pet_Button_1",
-        "description": "Ovaj mačak veličine prosječnog psa, savršeno je društvo za svakoga tko želi mačku koja ga može ozbiljno promatrati satima. Butonovi hobiji su smišljanje zlokobnih planova, čitanje Večernjakovih enciklopedija i ganjanje poštara. Postoji mogućnost da je prijateljski nastrojen prema djeci.",
-        "species": "cat"
-    }, 
-    {
-        "id":2,
-        "img": "../images/Ciglica.jpg",
-        "alt": "Ciglica",
-        "name": "Ciglica",
-        "button": "Pet_Button_2",
-        "description": "Ciglica je od malih šapa bila posebna maca. Njezine sestre Tratinčica i Ružica su dobile imena po laticama cvijeća koje su im pale na glavu prilikom okota. Ciglica nije bila te sreće. No i ona je vrijedna Vaše ljubavi.",
-        "species": "cat"
-    }, 
-    {
-        "id":3,
-        "img": "../images/Mrvica.jpg",
-        "alt": "Mrvica",
-        "name": "Mrvica",
-        "button": "Pet_Button_3",
-        "description": "Ovo je jedina mačka na našoj stranici koju ne možete birati za udomljavanje, već ona bira Vas. Ukoliko je tako suđeno, naći ćete ju u hladu svog vrta u rane jutarnje sate. Mrvica voli osobe koje se bave peradarstvom, duge šetnje uz more i obitavanje na ulicama Trstenika.",
-        "species": "cat"
-    }, 
-    {
-        "id":4,
-        "img": "../images/Jacob.jpeg",
-        "alt": "Jacob",
-        "name": "Jacob",
-        "button": "Pet_Button_4",
-        "description": "Jacob je vidio previše.",
-        "species": "cat"
-    }, 
-    {
-        "id":5,
-        "img": "../images/pet_4.jpg",
-        "alt": "Pet_Alt_12",
-        "name": "Pet_Name_12",
-        "button": "Pet_Button_12",
-        "description": "Pet_Description_12",
+        "description": "Naši stručnjaci su se dugo mučili pitanjem koje je vrste albina, no nakon 2 mjeseca diskusije, došli su do zaključka da je Albina izrazito rijetka vrsta albino papige, porodice Ara. Ipak, Albina se malo čudno glasa.",
         "species": "birb"
     },
     {
-        "id":6,
-        "img": "../images/Hulio.jpg",
-        "alt": "Hulio",
-        "name": "Hulio",
-        "button": "Pet_Button_6",
-        "description": "Ova divlja mačka koja je pospremila jednu našu volonterku na bolovanje, dolazi u naše sklonište s ulica divljeg Meksika. Iako je optužena da je narkobos, treba nekoga da ju hrani. Molimo Vas, odnesite ju.",
-        "species": "cat"
-    }, 
-    {
-        "id":7,
+        "id":2,
         "img": "../images/Aurelije.jpg",
         "alt": "Aurelije",
         "name": "Aurelije",
-        "button": "Pet_Button_7",
+        "button": "Pet_Button_2",
         "description": "Aurelije je divna maca. Ljut je još od pada Carigrada 1453. godine. Iako tako ne izgleda, Aurelije je nježna i draga mačka koja traži vlasnika koji će sa njom uspjeti osvetiti Bizantsko carstvo.",
         "species": "cat"
     }, 
     {
-        "id":8,
-        "img": "../images/Satelit.jpg",
-        "alt": "Satelit",
-        "name": "Satelit Mei",
-        "button": "Pet_Button_8",
-        "description": "Satelit Mei mačka je koju smo pronašli u šumi, a zatim pokušali pripitomiti. Mačka svim svojim karakteristikama ukazuje na to da je apex predator te ne suspreže od napada na ljude. Savjetujemo zaštitnu odjeću i dodatnu zaštitu zglobova i površinskih arterija.",
-        "species": "cat"
-    }, 
-    {
-        "id":9,
-        "img": "../images/Vlado.jpg",
-        "alt": "Vlado",
-        "name": "Vlado i Janko",
-        "button": "Pet_Button_9",
-        "description": "Vlado je mačka zvjezdastih očiju koja će cijeli dan vjerno hodati za Vama, a Janko je njegova pratnja bez koje Vlado naprosto ne može. Vladini omiljeni interesi su neprestano mijaukanje, čupanje kauča pandžama, urlanje na prozorima ako slučajno ostane vani i penjanje na Vašu glavu u 4 ujutro. Ipak, sve je to iz ljubavi.",
-        "species": "cat"
-    }, 
-    {
-        "id":10,
-        "img": "../images/pet_2.jpg",
-        "alt": "Pet_Alt_10",
-        "name": "Pet_Name_10",
-        "button": "Pet_Button_10",
-        "description": "Pet_Description_10",
-        "species": "birb"
-    }, 
-    {
-        "id":11,
-        "img": "../images/pet_3.jpg",
-        "alt": "Pet_Alt_11",
-        "name": "Pet_Name_11",
-        "button": "Pet_Button_11",
-        "description": "Pet_Description_11",
-        "species": "birb"
-    },
-    {
-        "id":12,
+        "id":3,
         "img": "../images/Buca.jpg",
         "alt": "Buca",
         "name": "Buca",
-        "button": "Pet_Button_5",
+        "button": "Pet_Button_3",
         "description": "Iako naliči lopti, Buca je savršena mačka za Vas. Toliko je druželjubiva da će ju usvojiti cijelo susjedstvo kojeg će zasigurno preklinjati za hranu kao da joj niste dali jesti deset gladnih godina iako je prošlo tek petnaest minuta. Neki od njezinih hobija su ležanje na krovovima, ležanje na plaži, ležanje...",
+        "species": "cat"
+    },
+    {
+        "id":4,
+        "img": "../images/Buton.jpg",
+        "alt": "Buton",
+        "name": "Buton",
+        "button": "Pet_Button_4",
+        "description": "Ovaj mačak veličine prosječnog psa, savršeno je društvo za svakoga tko želi mačku koja ga može ozbiljno promatrati satima. Butonovi hobiji su smišljanje zlokobnih planova, čitanje Večernjakovih enciklopedija i ganjanje poštara. Postoji mogućnost da je prijateljski nastrojen prema djeci.",
         "species": "cat"
     }, 
     {
-        "id":13,
-        "img": "../images/cat_square_1.jpg",
-        "alt": "Pet_Alt_13",
-        "name": "Pet_Name_13",
-        "button": "Pet_Button_13",
-        "description": "Pet_Description_13",
+        "id":5,
+        "img": "../images/Ciglica.jpg",
+        "alt": "Ciglica",
+        "name": "Ciglica",
+        "button": "Pet_Button_5",
+        "description": "Ciglica je od malih šapa bila posebna maca. Njezine sestre Tratinčica i Ružica su dobile imena po laticama cvijeća koje su im pale na glavu prilikom okota. Ciglica nije bila te sreće. No i ona je vrijedna Vaše ljubavi.",
+        "species": "cat"
+    },
+    {
+        "id":6,
+        "img": "../images/Debeljuca.jpeg",
+        "alt": "Debeljuca",
+        "name": "Debeljuca",
+        "button": "Pet_Button_6",
+        "description": "Debeljuca je upravo ono što joj ime sugerira. Ova slatka ptičica jede više od prosječnog psa, ali je vrlo draga i voli letjeti u krugovima i zabijati se u zidove (ako je u stanju poletjeti nakon ručka).",
         "species": "birb"
-    }
+    },
+    {
+        "id":7,
+        "img": "../images/Filip.jpeg",
+        "alt": "Filip",
+        "name": "Filipić",
+        "button": "Pet_Button_7",
+        "description": "Filipić je pas iz noćne more! On Vas ne cijeni, ne poštuje i maltretira! Osim toga sumnja u Vas te je usto i bezobrazani ugnjetavatelj. Ali je drag i dobar.",
+        "species": "dog"
+    },
+    {
+        "id":8,
+        "img": "../images/Goblin.jpeg",
+        "alt": "Goblin",
+        "name": "Goblin",
+        "button": "Pet_Button_8",
+        "description": "Goblinove velike oči savršeno odražavaju njegov karakter i pokazuju psa koji je ogromni emocionalni manipulator. Goblin se vraća u program udomljavanja nakon jednogodišnje rehabilitacije zbog pretilosti. Njegova pretilost je izazvana time što svakih 47 minuta gleda vlasnike svojim tužnim očima i uvjerava ih da ga teško izgladnjuju.",
+        "species": "dog"
+    },
+    {
+        "id":9,
+        "img": "../images/Hedwig.jpeg",
+        "alt": "Hedwig",
+        "name": "Hedwig",
+        "button": "Pet_Button_9",
+        "description": "Hedwig je došla u naše utočište nakon sedme knjige Harry Pottera da se malo odmori. Konstantno krade pisma iz našeg sandučića, stoga preporučujemo lokot (za poštu, ne za Hedwig). Hedwig je sova na privremenom udomljavanju jer će se nakon godišnjeg odmora (koji Vi financirate) vratiti svom pravom vlasniku.",
+        "species": "birb"
+    },
+    {
+        "id":10,
+        "img": "../images/Hulio.jpg",
+        "alt": "Hulio",
+        "name": "Hulio",
+        "button": "Pet_Button_10",
+        "description": "Ova divlja mačka koja je pospremila jednu našu volonterku na bolovanje, dolazi u naše sklonište s ulica divljeg Meksika. Iako je optužena da je narkobos, treba nekoga da ju hrani. Molimo Vas, odnesite ju.",
+        "species": "cat"
+    },
+    {
+        "id":11,
+        "img": "../images/Jacob.jpeg",
+        "alt": "Jacob",
+        "name": "Jacob",
+        "button": "Pet_Button_11",
+        "description": "Jacob je vidio previše.",
+        "species": "cat"
+    },
+    {
+        "id":12,
+        "img": "../images/Jhin.jpeg",
+        "alt": "Jhin",
+        "name": "Jhin",
+        "button": "Pet_Button_12",
+        "description": "Jhin je minijaturni pas, ispunjen s puno energije. Ovaj živahan pas savršen je za ljude koji tiho pričaju jer svojim velikim ušima čuje apsolutno sve, stoga će se odazvati i na šapat. Prirodno stanište mu je ravno pod Vašim nogama, a prirodni neprijatelj poštar.",
+        "species": "dog"
+    }, 
+    {
+        "id":13,
+        "img": "../images/Kokolo.jpeg",
+        "alt": "Kokolo",
+        "name": "Kokolo",
+        "button": "Pet_Button_13",
+        "description": "Kokolova potraga za novim domom počela je zbog selidbe njegove prijašnje vlasnice na Internacionalnu svemirsku stanicu. Posljednje javljanje s njene strane glasilo je: “Kokolo, kokolo, kokolo, kokolo moj!  Kokolo, kokolo, kokolo, kad si bio moj!”",
+        "species": "dog"
+    },
+    {
+        "id":14,
+        "img": "../images/Macola.jpeg",
+        "alt": "Macola",
+        "name": "Macola",
+        "button": "Pet_Button_14",
+        "description": "Ova patka je pronađena na jezercu pokraj Solina gdje je grabila nesretnu djecu i pokušavala ih odvući u dubinu. Voljeli bismo napomenuti da tražimo svoju volonterku koja je nestala istog dana kad je Macola pronađena, stoga molimo da kontaktirate nas ili policiju u slučaju da ju vidite.",
+        "species": "birb"
+    },
+    {
+        "id":15,
+        "img": "../images/Mirko.jpeg",
+        "alt": "Mirko",
+        "name": "Mirko",
+        "button": "Pet_Button_15",
+        "description": "Mirko je papiga neobičnog podrijetla. Malo je drugačiji od ostalih s obzirom na to da mu krila imaju promjer od 2 metra. Nikad nije naučio pričati i možda nije šaren, ali uz njega ćemo Vam gratis pokloniti i flomastere u 3 različite boje. Prednost Mirka je da sam sprema svoju večeru.",
+        "species": "birb"
+    }, 
+    {
+        "id":16,
+        "img": "../images/Mrvica.jpg",
+        "alt": "Mrvica",
+        "name": "Mrvica",
+        "button": "Pet_Button_16",
+        "description": "Ovo je jedina mačka na našoj stranici koju ne možete birati za udomljavanje, već ona bira Vas. Ukoliko je tako suđeno, naći ćete ju u hladu svog vrta u rane jutarnje sate. Mrvica voli osobe koje se bave peradarstvom, duge šetnje uz more i obitavanje na ulicama Trstenika.",
+        "species": "cat"
+    },
+    {
+        "id":17,
+        "img": "../images/Njuskica.jpeg",
+        "alt": "Njuškica",
+        "name": "Njuskica",
+        "button": "Pet_Button_17",
+        "description": "Iako je Njuškica mali pas, ne dajte da Vas to zavara. Dodatna zaštita za gležnjeve je nužna.",
+        "species": "dog"
+    },
+    {
+        "id":18,
+        "img": "../images/Pepa.jpeg",
+        "alt": "Pepa",
+        "name": "Pepa",
+        "button": "Pet_Button_18",
+        "description": "Pepa je od rođenja malo drugačija od ostalih pasa. Naime, razlog leži u tome što je svinja. Pepa je savršeni ovčarski pas zato što voli ugnjetavati svu vrstu stoke.",
+        "species": "dog"
+    },
+    {
+        "id":19,
+        "img": "../images/Sapica.jpeg",
+        "alt": "Sapica",
+        "name": "Šapica",
+        "button": "Pet_Button_19",
+        "description": "Šapica je pronađen u originalnoj Adidas kutiji od Gazelle patika koje su trenutno 499,99kn na akciji u Shoosteru, Mall of Split, do 29. ožujka. Ova poruka nije sponzorirana od strane Adidas prodavača. Postoji samo jedna stvar bolja od Adidas Gazelle patika, a to je Šapicino veeeeliko srce! Šapicu možete pronaći besplatno u Veterinarskoj klinici Ivić, na adresi Papandopulova 17, Split. Iskoristite ovu jedinstvenu priliku bez kamata!",
+        "species": "dog"
+    }, 
+    {
+        "id":20,
+        "img": "../images/Satelit.jpg",
+        "alt": "Satelit",
+        "name": "Satelit Mei",
+        "button": "Pet_Button_20",
+        "description": "Satelit Mei mačka je koju smo pronašli u šumi, a zatim pokušali pripitomiti. Mačka svim svojim karakteristikama ukazuje na to da je apex predator te ne suspreže od napada na ljude. Savjetujemo zaštitnu odjeću i dodatnu zaštitu zglobova i površinskih arterija.",
+        "species": "cat"
+    },
+    {
+        "id":21,
+        "img": "../images/Seraphine.jpeg",
+        "alt": "Seraphine",
+        "name": "Seraphine",
+        "button": "Pet_Button_21",
+        "description": "Seraphine je savršeni nepotrebni dodatak Vašem domu. Ukoliko želite malo iritantno stvorenje koje vrišti 24 sata dnevno, Seraphine je ptica za Vas!",
+        "species": "birb"
+    },
+    {
+        "id":22,
+        "img": "../images/Slatkis.jpeg",
+        "alt": "Slatkis",
+        "name": "Slatkiš",
+        "button": "Pet_Button_22",
+        "description": "Ovaj divni pas pronađen je u Lici usred snježne lavine gdje je herojski spašavao i iskopavao ostale zarobljene pod snijegom. Iako Vas podupiremo u želji da udomite slatkiša, budimo realni - nikad mu nećete biti ni do koljena.",
+        "species": "dog"
+    },
+    {
+        "id":23,
+        "img": "../images/Stipe.jpeg",
+        "alt": "Stipe",
+        "name": "Stipe",
+        "button": "Pet_Button_23",
+        "description": "Stipe je kao i svi ostali iz Splita - galeb.",
+        "species": "birb"
+    },
+    {
+        "id":24,
+        "img": "../images/Vladimir.jpeg",
+        "alt": "Vladimir",
+        "name": "Vladimir",
+        "button": "Pet_Button_24",
+        "description": "Vladimir je orao neobičnog podrijetla. Malo je drugačiji od ostalih s obzirom na to da mu krila imaju promjer od 30 cm. Iz nekog razloga zna pričati što je malo uznemiravajuće, no zato ćete dobiti nekoga tko će Vam uvijek nuditi dobre životne savjete i pokoju psovku. Vladimir je malo poseban i ne zna najbolje loviti pa ćete mu morati pripremati večeru.",
+        "species": "birb"
+    },
+    {
+        "id":25,
+        "img": "../images/Vlado.jpg",
+        "alt": "Vlado",
+        "name": "Vlado i Janko",
+        "button": "Pet_Button_25",
+        "description": "Vlado je mačka zvjezdastih očiju koja će cijeli dan vjerno hodati za Vama, a Janko je njegova pratnja bez koje Vlado naprosto ne može. Vladini omiljeni interesi su neprestano mijaukanje, čupanje kauča pandžama, urlanje na prozorima ako slučajno ostane vani i penjanje na Vašu glavu u 4 ujutro. Ipak, sve je to iz ljubavi.",
+        "species": "cat"
+    }  
 ]

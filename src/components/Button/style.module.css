@@ -35,7 +35,7 @@ html{
     text-decoration: none;
     transition: 0.3s !important;
     border-radius: 50px;
-    margin: 50px 50px 50px 50px;
+    margin-top: 1rem;
 }
 
 .button2:hover{

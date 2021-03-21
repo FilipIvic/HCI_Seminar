@@ -1,11 +1,18 @@
+html{
+    --color-1: #F26A2E;
+    --color-2: #077BF1;
+  }
+
 .footerContainer{
     padding: 5rem calc((100vw - 1100px) / 2);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    color: #000;
-    background: #fafafb;
-    border-color: aqua;
-    border-style: solid;
+    background: #fffdfa;
+    border-top: 3px var(--color-1) solid;
+    border-bottom: 3px var(--color-1) solid;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
 }
 
 .footerDesc{

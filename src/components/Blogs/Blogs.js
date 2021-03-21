@@ -3,6 +3,7 @@ import {useStaticQuery, graphql} from 'gatsby'
 import styles from './style.module.css'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import Icons from '../Icons/Icons'
  
 const Blogs = () => {
   const data = useStaticQuery(graphql`
@@ -31,18 +32,23 @@ const Blogs = () => {
  
   return (
     <section className={styles.blogContainer}>
-      <h2>Read our blogposts!</h2>
-      <ul className={styles.list}>
-        {data.allContentfulBlogZaVeterinarskuStanicu.nodes.map(node => {
-          return (
-            <li>
-              <centre><b>{node.poveznica}</b></centre>
-              <PetImg fixed = {node.slika.fixed}></PetImg>
-              <div><p>{node.tekstBloga.tekstBloga}</p></div>
-            </li>
-          )
-        })}
-      </ul>
+       <div className={styles.textWrapHeading}>
+          <div className={styles.heading}>Pročitajte Naš Blog</div>
+          <Icons icon="blog" color="#F26A2E" size="4rem"></Icons>
+        </div>
+        <ul className={styles.list}>
+          {data.allContentfulBlogZaVeterinarskuStanicu.nodes.map(node => {
+            return (
+              <li>
+                <div className={styles.items}>
+                  <h2>{node.poveznica}</h2>
+                </div>
+                <PetImg fixed = {node.slika.fixed}></PetImg>
+                <div><p>{node.tekstBloga.tekstBloga}</p></div>
+              </li>
+            )
+          })}
+        </ul>
     </section>
   )
 }
@@ -54,10 +60,4 @@ const PetImg = styled(Img)`
   width: 500px;
   position: relative;
   border-radius: 10px;
-  filter: brightness(80%);
-  transition: 0.4s cubic-cubic-bezier(0.075, 0.82, 0.165, 1);
-
-  &:hover {
-    filter: brightness(100%)
-  }
 `

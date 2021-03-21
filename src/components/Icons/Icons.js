@@ -4,6 +4,7 @@ import {GiHummingbird, GiHospitalCross} from 'react-icons/gi'
 import {MdError, MdPets} from 'react-icons/md'
 import {FaCat,FaDog, FaBars} from 'react-icons/fa'
 import {AiOutlineSearch} from 'react-icons/ai'
+import {HiOutlineBookOpen} from 'react-icons/hi'
 
 const Icons = ({icon, color, size}) => {
     if(icon === "cross" )
@@ -20,6 +21,8 @@ const Icons = ({icon, color, size}) => {
         return (<MdPetsIcon aliasColor = {color} aliasSize = {size}></MdPetsIcon>)
     if(icon === "search" )
         return (<AiOutlineSearchIcon aliasColor = {color} aliasSize = {size}></AiOutlineSearchIcon>)
+    if(icon === "blog" )
+        return (<HiOutlineBookOpenIcon aliasColor = {color} aliasSize = {size}></HiOutlineBookOpenIcon>)
     else
         return (<MdErrorIcon></MdErrorIcon>)
 }
@@ -53,6 +56,11 @@ const MdPetsIcon = styled(MdPets)`
     font-size: ${({ aliasSize }) => (aliasSize ? aliasSize : '3rem')};
 `
 const AiOutlineSearchIcon = styled(AiOutlineSearch)`
+    color: ${({ aliasColor }) => (aliasColor ? aliasColor : 'black')};
+    font-size: ${({ aliasSize }) => (aliasSize ? aliasSize : '3rem')};
+`
+
+const HiOutlineBookOpenIcon = styled(HiOutlineBookOpen)`
     color: ${({ aliasColor }) => (aliasColor ? aliasColor : 'black')};
     font-size: ${({ aliasSize }) => (aliasSize ? aliasSize : '3rem')};
 `

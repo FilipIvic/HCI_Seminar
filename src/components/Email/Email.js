@@ -63,7 +63,7 @@ const Email = (props) => {
                   <input type="email" className={styles.email} placeholder=" Vaša Email Adresa..." name="email" onChange={handleChange2} value={input2}/>
               </div>
               <div className={styles.subjectdiv}>
-                  <input type="text" className={styles.subject} placeholder=" Predmet..." name="subject" onChange={handleChange3} value={props.name}/>
+                  <input type="text" className={styles.subject} placeholder=" Predmet..." name="subject" onChange={handleChange3} value={input3}/>
               </div>
             </div>
             <div>
