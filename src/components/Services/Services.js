@@ -4,7 +4,6 @@ import styles from './style.module.css'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import Button from '../Button/Button'
-import {Link}  from 'gatsby'
 
 const Services = () => {
      const data = useStaticQuery(graphql`
@@ -50,7 +49,7 @@ const Services = () => {
               )
           }
       )}
-      </div>    
+      </div>
     </div>
     )
 }

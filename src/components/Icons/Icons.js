@@ -3,8 +3,11 @@ import styled from 'styled-components'
 import {GiHummingbird, GiHospitalCross} from 'react-icons/gi'
 import {MdError, MdPets} from 'react-icons/md'
 import {FaCat,FaDog, FaBars} from 'react-icons/fa'
-import {AiOutlineSearch} from 'react-icons/ai'
+import {AiOutlineSearch, AiOutlineFundProjectionScreen} from 'react-icons/ai'
 import {HiOutlineBookOpen} from 'react-icons/hi'
+import {RiSyringeLine} from 'react-icons/ri'
+import {FiScissors} from 'react-icons/fi'
+import {BiChip} from 'react-icons/bi'
 
 const Icons = ({icon, color, size}) => {
     if(icon === "cross" )
@@ -23,6 +26,14 @@ const Icons = ({icon, color, size}) => {
         return (<AiOutlineSearchIcon aliasColor = {color} aliasSize = {size}></AiOutlineSearchIcon>)
     if(icon === "blog" )
         return (<HiOutlineBookOpenIcon aliasColor = {color} aliasSize = {size}></HiOutlineBookOpenIcon>)
+    if(icon === "syringe" )
+        return (<RiSyringeLineIcon aliasColor = {color} aliasSize = {size}></RiSyringeLineIcon>)
+    if(icon === "scissors" )
+        return (<FiScissorsIcon aliasColor = {color} aliasSize = {size}></FiScissorsIcon>)
+    if(icon === "rendgen" )
+        return (<AiOutlineFundProjectionScreenIcon aliasColor = {color} aliasSize = {size}></AiOutlineFundProjectionScreenIcon>)
+    if(icon === "chip" )
+        return (<BiChipIcon aliasColor = {color} aliasSize = {size}></BiChipIcon>)
     else
         return (<MdErrorIcon></MdErrorIcon>)
 }
@@ -61,6 +72,25 @@ const AiOutlineSearchIcon = styled(AiOutlineSearch)`
 `
 
 const HiOutlineBookOpenIcon = styled(HiOutlineBookOpen)`
+    color: ${({ aliasColor }) => (aliasColor ? aliasColor : 'black')};
+    font-size: ${({ aliasSize }) => (aliasSize ? aliasSize : '3rem')};
+`
+const RiSyringeLineIcon = styled(RiSyringeLine)`
+    color: ${({ aliasColor }) => (aliasColor ? aliasColor : 'black')};
+    font-size: ${({ aliasSize }) => (aliasSize ? aliasSize : '3rem')};
+`
+
+const FiScissorsIcon = styled(FiScissors)`
+    color: ${({ aliasColor }) => (aliasColor ? aliasColor : 'black')};
+    font-size: ${({ aliasSize }) => (aliasSize ? aliasSize : '3rem')};
+`
+
+const AiOutlineFundProjectionScreenIcon = styled(AiOutlineFundProjectionScreen)`
+    color: ${({ aliasColor }) => (aliasColor ? aliasColor : 'black')};
+    font-size: ${({ aliasSize }) => (aliasSize ? aliasSize : '3rem')};
+`
+
+const BiChipIcon = styled(BiChip)`
     color: ${({ aliasColor }) => (aliasColor ? aliasColor : 'black')};
     font-size: ${({ aliasSize }) => (aliasSize ? aliasSize : '3rem')};
 `

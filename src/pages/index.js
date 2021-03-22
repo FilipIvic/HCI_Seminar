@@ -13,19 +13,11 @@ const IndexPage = () => (
     buttonText="Hitna Pomoć!">
     <Background></Background>
     <Zoom>
-      <div id = "anchor"></div>
       <Emergency></Emergency>
     </Zoom>
     <Services></Services>
-    <div id = "usluga1"></div>
     <Service></Service>
-    <div id = "usluga2"></div>
-    <Service></Service>
-    <div id = "usluga3">Usluga3</div>
-    <Service></Service>
-    <div id = "usluga4"></div>
-    <Service></Service>
-    <div id = "kontakt">Kontakt</div>
+    <div id = "kontakt"></div>
   </Layout>
 )
 

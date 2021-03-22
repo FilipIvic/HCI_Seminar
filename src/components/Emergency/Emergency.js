@@ -45,7 +45,7 @@ const Emergency = () => {
             </div>
             <div className={styles.emergencyWrapper}>
                 <div className={styles.content}>
-                    <div className={styles.items}>
+                    <div id = "anchor" className={styles.items}>
                         <p>Tel.</p>
                         <p>Mob.</p>
                         <p className={styles.email}>e-Mail</p>

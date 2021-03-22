@@ -1,30 +1,30 @@
 [
     {
-        "img": "../images/Usluga_1.png",
-        "alt": "Usluga_Alt_1",
-        "name": "Usluga_1",
+        "img": "../images/Cjepiva_Usluga1.jpeg",
+        "alt": "Cjepiva",
+        "name": "Cjepiva",
         "button": "#usluga1",
-        "description": "Pet_Description_1"
+        "description": "Cjepiva"
     }, 
     {
-        "img": "../images/Usluga_2.png",
-        "alt": "Usluga_Alt_2",
-        "name": "Usluga_2",
+        "img": "../images/Kastracije_Usluga2.jpeg",
+        "alt": "Kastracije",
+        "name": "Kastracije",
         "button": "#usluga2",
-        "description": "Pet_Description_2"
+        "description": "Kastracije"
     }, 
     {
-        "img": "../images/Usluga_3.png",
-        "alt": "Usluga_Alt_3",
-        "name": "Usluga_3",
+        "img": "../images/Rendgen_Usluga3.jpeg",
+        "alt": "Rendgen",
+        "name": "Rendgen",
         "button": "#usluga3",
-        "description": "Pet_Description_3"
+        "description": "Rendgen"
     }, 
     {
-        "img": "../images/Usluga_4.png",
-        "alt": "Usluga_Alt_4",
-        "name": "Usluga_4",
+        "img": "../images/Cipiranje_Usluga4.jpeg",
+        "alt": "Cipiranje",
+        "name": "Čipiranje",
         "button": "#usluga4",
-        "description": "Pet_Description_4"
+        "description": "Čipiranje"
     }
 ]

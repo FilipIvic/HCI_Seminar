@@ -8,46 +8,78 @@ import Icons from '../Icons/Icons'
 // import Map from '../Map/Map'
 
 const Service = () => {
-    // const location = {
-    //     address: '1600 Amphitheatre Parkway, Mountain View, california.',
-    //     lat: 37.42216,
-    //     lng: -122.08427,
-    //     center: [59.938043, 30.337157]
-    //   }
+    const data = useStaticQuery(graphql`
+     query MyQuery7 {
+        allServiceJson {
+          edges {
+            node {
+              heading
+              name
+              alt
+              orientation
+              content
+              icon
+              id
+              img {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    `)
     
+    let items = data.allServiceJson.edges
 
     return (
-        <div className={styles.emergencyContainer}>
-             <div className={styles.textWrapHeading}>
-              <div className={styles.heading}>Naslov</div>
-              <Icons icon="cross" color="#F26A2E" size="4rem"></Icons>
-            </div>
-            <div className={styles.emergencyWrapper}>
-                <div className={styles.content}>
-                    <div className={styles.items}>
-                        <p>Tel.</p>
-                        <p>Mob.</p>
-                        <p className={styles.email}>e-Mail</p>
+        <div>
+            {items.map((item, index) => {
+              return(
+                <div className={styles.emergencyContainer}>
+                    <div className={styles.textWrapHeading}>
+                        <div className={styles.heading}>{item.node.heading}</div>
+                        <Icons icon={item.node.icon} color="#F26A2E" size="4rem"></Icons>
                     </div>
+                    {(item.node.orientation === 'left') ? (
+                        <div className={styles.emergencyWrapperLeft}> 
+                            <div className={styles.content}>
+                                <div id={item.node.id} className={styles.items}>
+                                    <p>{item.node.content}</p>
+                                </div>
+                            </div>
+                            <div className={styles.content}>
+                                <div className={styles.items}>
+                                    <ServiceImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></ServiceImg> 
+                                </div>
+                            </div>
+                        </div>) : (
+                        <div className={styles.emergencyWrapperRight}> 
+                            <div className={styles.content}>
+                                <div id={item.node.id} className={styles.items}>
+                                    <ServiceImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></ServiceImg> 
+                                </div>
+                            </div>
+                            <div className={styles.content}>
+                                <div className={styles.items}>
+                                    <p>{item.node.content}</p>
+                                </div>
+                            </div>
+                        </div>
+                    )}
                 </div>
-                <div className={styles.content}>
-                    <div className={styles.items}>
-                        <p>+0953545317</p>
-                        <p>Hello world</p>
-                        <p>vet.ivic@gmail.com</p>
-                    </div>
-                </div>
-            </div>
+              )
+          })}
         </div>
     )
 }
 
 export default Service
 
-const Map = styled(Img)`
+const ServiceImg = styled(Img)`
   min-width: 500px;
   border-radius: 10px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #F26A2E;
 `
