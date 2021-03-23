@@ -82,4 +82,13 @@ export default Service
 const ServiceImg = styled(Img)`
   min-width: 500px;
   border-radius: 10px;
+
+  @media screen and (max-width: 1200px) {
+    min-width: 450px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    min-width: 400px;
+  }
+
 `

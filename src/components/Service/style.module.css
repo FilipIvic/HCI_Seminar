@@ -61,10 +61,12 @@ html{
 
 .items p{
     color:black;
+    text-align: justify;
+    word-wrap: break-word;
     font-size: clamp(0.5rem, 1.5vw, 1.5rem);
     margin-bottom: 2rem;
     padding-right: 1.5rem;
-    font-weight: 150;
+    font-weight: 200;
     
 }
 
@@ -80,4 +82,22 @@ html{
     margin-bottom: 1.5rem;
     padding-right: 3rem;
     font-weight: 300;
+}
+
+@media screen and (max-width: 768px){
+    .emergencyWrapperLeft{
+        grid-template-columns: 1fr;
+    }
+    .emergencyWrapperRight{
+        grid-template-columns: 1fr;
+    }
+    .items p{
+        color:black;
+        text-align: justify;
+        word-wrap: break-word;
+        font-size: 20px;
+        margin-bottom: 2rem;
+        padding-right: 1.5rem;
+        font-weight: 200;  
+    }
 }

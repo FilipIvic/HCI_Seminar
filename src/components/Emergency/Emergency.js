@@ -79,4 +79,8 @@ const Map = styled(Img)`
   border-style: solid;
   border-width: 2px;
   border-color: #F26A2E;
+
+  @media screen and (max-width: 1200px) {
+    min-width: 450px;
+  }
 `

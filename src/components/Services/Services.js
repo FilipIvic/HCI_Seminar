@@ -4,8 +4,9 @@ import styles from './style.module.css'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import Button from '../Button/Button'
+import Icons from '../Icons/Icons'
 
-const Services = () => {
+const Services = ({heading}) => {
      const data = useStaticQuery(graphql`
      query MyQuery5 {
         allServicesJson {
@@ -32,7 +33,10 @@ const Services = () => {
     
     return (
     <div className={styles.servicesContainer}>
-      <div className={styles.heading}>Naslov</div>
+      <div className={styles.textWrapHeading}>
+        <div className={styles.heading}>{heading}</div>
+        <Icons icon="cross" color="#F26A2E" size="4rem"></Icons>
+      </div>
       <div className={styles.serviceWrapper}>
       {items.map((item, index) => {
               return(
@@ -40,10 +44,11 @@ const Services = () => {
                       <ServiceImg alt={item.node.alt} fluid = {item.node.img.childImageSharp.fluid}></ServiceImg>
                       <div className={styles.serviceInfo}> 
                         <div className={styles.textWrap}>
-                            <div className={styles.serviceTitle}>{item.node.name}</div>
+                            {/* <div className={styles.serviceTitle}>{item.node.name}</div> */}
+                            <Button link={`/${item.node.button}`} text={item.node.button}></Button>
                         </div>
-                        <div className={styles.serviceDescription}>{item.node.description}</div>
-                        <Button link={`/${item.node.button}`} text={item.node.button} style="button2"></Button>
+                        {/* <div className={styles.serviceDescription}>{item.node.description}</div> */}
+                        
                       </div>
                 </div>
               )

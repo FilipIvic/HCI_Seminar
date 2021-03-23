@@ -3,28 +3,28 @@
         "img": "../images/Cjepiva_Usluga1.jpeg",
         "alt": "Cjepiva",
         "name": "Cjepiva",
-        "button": "#usluga1",
+        "button": "Cjepiva",
         "description": "Cjepiva"
     }, 
     {
         "img": "../images/Kastracije_Usluga2.jpeg",
         "alt": "Kastracije",
         "name": "Kastracije",
-        "button": "#usluga2",
+        "button": "Kastracije",
         "description": "Kastracije"
     }, 
     {
         "img": "../images/Rendgen_Usluga3.jpeg",
         "alt": "Rendgen",
         "name": "Rendgen",
-        "button": "#usluga3",
+        "button": "Rendgen",
         "description": "Rendgen"
     }, 
     {
         "img": "../images/Cipiranje_Usluga4.jpeg",
         "alt": "Cipiranje",
         "name": "Čipiranje",
-        "button": "#usluga4",
+        "button": "Čipiranje",
         "description": "Čipiranje"
     }
 ]

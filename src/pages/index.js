@@ -15,7 +15,7 @@ const IndexPage = () => (
     <Zoom>
       <Emergency></Emergency>
     </Zoom>
-    <Services></Services>
+    <Services heading="Usluge"></Services>
     <Service></Service>
     <div id = "kontakt"></div>
   </Layout>

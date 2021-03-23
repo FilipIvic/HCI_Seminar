@@ -181,10 +181,16 @@ html{
     .petsWrapper{
         grid-template-columns: 1fr 1fr;
     }
+    .inputDiv{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 700px){
     .petsWrapper{
+        grid-template-columns: 1fr;
+    }
+    .inputDiv{
         grid-template-columns: 1fr;
     }
 }
@@ -192,5 +198,8 @@ html{
 @media screen and (max-width: 280px){
     .petInfo{
         padding: 0 1rem;
+    }
+    .inputDiv{
+        grid-template-columns: 1fr;
     }
 }
