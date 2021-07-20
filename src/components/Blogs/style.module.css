@@ -20,7 +20,7 @@ html{
 }
 
 .heading{
-  font-size: clamp(1.2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 5vw, 3rem);
   text-align: center;
   color: var(--color-1);
   padding-right: 1rem;

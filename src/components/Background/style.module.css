@@ -68,3 +68,12 @@ html{
     padding-right: 5rem;
     font-weight: 300;
 }
+
+@media screen and (max-width: 1300px){
+    .items h1{
+        padding-right: 0rem;
+    }
+    .items p{
+        padding-right: 0rem;
+    }
+}

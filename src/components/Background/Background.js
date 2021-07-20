@@ -11,8 +11,9 @@ const Background = () => {
         </div>
         <div className={styles.content}>
           <div className={styles.items}>
-            <h1>Hello World!</h1>
-            <p>Hello world</p>
+            <h1>Veterinarska</h1>
+            <h1>Stanica Ivić</h1>
+            <p>Split - Hrvatska</p>
           </div>
         </div>
       </Container>

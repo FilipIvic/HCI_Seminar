@@ -40,21 +40,21 @@ const Emergency = () => {
     return (
         <div className={styles.emergencyContainer}>
              <div className={styles.textWrapHeading}>
-              <div className={styles.heading}>Naslov</div>
+              <div className={styles.heading}>Hitna Pomoć</div>
               <Icons icon="cross" color="#F26A2E" size="4rem"></Icons>
             </div>
             <div className={styles.emergencyWrapper}>
                 <div className={styles.content}>
-                    <div id = "anchor" className={styles.items}>
+                    <div id = "HELP" className={styles.items}>
                         <p>Tel.</p>
                         <p>Mob.</p>
-                        <p className={styles.email}>e-Mail</p>
+                        <p className={styles.email}>e-Mail:</p>
                     </div>
                 </div>
                 <div className={styles.content}>
                     <div className={styles.items}>
-                        <p>+0953545317</p>
-                        <p>Hello world</p>
+                        <p>+021 468 875</p>
+                        <p>+385 953 545 315</p>
                         <p>vet.ivic@gmail.com</p>
                     </div>
                 </div>

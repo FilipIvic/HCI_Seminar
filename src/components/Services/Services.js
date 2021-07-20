@@ -45,7 +45,7 @@ const Services = ({heading}) => {
                       <div className={styles.serviceInfo}> 
                         <div className={styles.textWrap}>
                             {/* <div className={styles.serviceTitle}>{item.node.name}</div> */}
-                            <Button link={`/${item.node.button}`} text={item.node.button}></Button>
+                            <Button link={`/#${item.node.button}`} text={item.node.button}></Button>
                         </div>
                         {/* <div className={styles.serviceDescription}>{item.node.description}</div> */}
                         

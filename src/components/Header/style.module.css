@@ -13,6 +13,18 @@ html{
     position: relative;
 }
 
+.active{
+    color: var(--color-1);
+    padding: 100px;
+}
+
+.textWrapHeading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5rem;
+}
+
 .transparent{
     background: transparent;
     height: 80px;

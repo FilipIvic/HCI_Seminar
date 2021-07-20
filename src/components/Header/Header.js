@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Button from '../Button/Button'
 import menuData from '../../data/constants/menuData'
 import HeaderMobile from '../HeaderMobile/HeaderMobile'
+import Icons from "../Icons/Icons"
 
 import {AnchorLink} from 'gatsby-plugin-anchor-links'
 import {Link}  from 'gatsby'
@@ -16,7 +17,10 @@ const refreshPage = (a) => {
 const Header = (props) => {
   return(
       <nav className={styles[props.navigationStyle || 'navigation']}>
-        <NavLinkLogo to="/">{props.logo}</NavLinkLogo>
+        <div className={styles.textWrapHeading}>
+          <NavLinkLogo to="/">{props.logo}</NavLinkLogo>
+          <Icons icon="cross" color="#fff" size="2rem"></Icons>
+        </div>
         {/* <Menu></Menu> */}
         <div className={styles.headerMobile}>
           <HeaderMobile navigationStyle={props.navigationStyle}
@@ -70,8 +74,8 @@ const Header = (props) => {
         })}
         </div>
         <div className={styles.buttonContainer}>
-          <Button link="/#anchor" text={props.buttonText}></Button>
-        </div >
+          <Button link="/#HELP" text={props.buttonText}></Button>
+        </div>
       </nav>
   )
 }
@@ -97,6 +101,8 @@ const NavLinkLogo = styled(Link)`
   align-items: center;
   text-decoration: none;
   font-size: clamp(0.7rem, 3vw, 1.1rem);
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
   padding: 0 1rem;
   height: 110%;
   cursor: pointer;
@@ -115,6 +121,7 @@ const NavAnchorLink = styled(AnchorLink)`
   height: 100%;
   cursor: pointer;
 `
+
 // const Menu = styled(FaBars)`
 //   display: none;
 //   color: #fff;
