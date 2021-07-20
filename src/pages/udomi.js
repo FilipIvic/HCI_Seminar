@@ -27,7 +27,7 @@ const UdomiMePage = ({location}) => {
           logo="Veterinarska Stanica Ivić"
           buttonText="Hitna Pomoć!">
           <Pets speciesProps="cat"
-            inputProps="Pretraži mačake..."
+            inputProps="Pretraži mačke..."
             headerProps="Mace"
             buttonText="Meow, Udomi Me!">
           </Pets>
