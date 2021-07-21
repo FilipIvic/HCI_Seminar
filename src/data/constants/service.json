@@ -7,7 +7,7 @@
         "orientation": "left",
         "icon": "syringe",
         "id": "Cjepiva",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "content": "Naša klinika nudi širok izbor cjepiva za sve Vaše čupave prijatelje od mačke do svinje pa čak i do Vašeg pomalo čudnog prijatelja Marka. Neovisno o tome jesu li se ovog dana odlučili zaraziti novom virozom ili tuberkulozom, najbolja intervencija je prevencija! Stoga savjetujemo da svakog svojeg ljubimca dovedete na cijepljenje nakon čega će naš veterinar staviti debele rukavice i othrvati Vašu životinju do zdravlja. Molimo da se za cijepljenje najavite unaprijed, što osobito vrijedi za vlasnike morskih pasa."
     }, 
     {
         "heading" : "Kastracije",
@@ -17,7 +17,7 @@
         "orientation": "right",
         "icon": "scissors",
         "id": "Kastracije",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "content": "Vaš pas želi pobjeći u Meksiko i preimenovati se u Pepito? Vaša mačka voli romantične šetnje Azurnom obalom bez svog vlasnika? Neovisno o tome proživljava li Vaša životinja tinejdžersku krizu ili krizu srednjih godina, savjetujemo da ju čipirate čime ćete joj omogućiti povratak doma nakon njene male avanture. Mikročip je vrlo malenih dimenzija i stavlja se u potkožje između lopatica te uopće neće smetati Vašem ljubimcu, stoga zanemarite sve što Vam Vaša mačka pokušava reći."
     }, 
     {
         "heading" : "Rendgeni",
@@ -27,7 +27,7 @@
         "orientation": "left",
         "icon": "rendgen",
         "id": "Rendgen",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "content": "Jasno je da je Vaš ljubimac zvijezda i ne voli ništa više od svjetala fotoaparata. Stoga je kod nas moguće poslikati sve vrste životinja – od najvećih do najgorih. Rendgen je vrlo dobar način da otkrijete nove informacije o prehrambenim navikama svojeg ljubimca – bile to žlice ili golf loptice. Nedostaje Vam omiljeni magnet s hladnjaka? Posjetite nas!"
     }, 
     {
         "heading" : "Čipiranje",
@@ -37,6 +37,6 @@
         "orientation": "right",
         "icon": "chip",
         "id": "Čipiranje",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "content": "Ukoliko ste primijetili da je selo puno mačaka koje izgledaju točno poput Vaše ili Vam susjed pokušava odvesti psa na DNK testiranje kako bi ga prisilio na plaćanje alimentacije za pet novih štenaca, vjerojatno je vrijeme da se pomirite s time da Vaša životinja nije dobro prihvatila sve one lekcije o apstinenciji. Stoga Vam nudimo brzo i efikasno rješenje za sva vremena, a usto poklanjamo i satelitski tanjur za životinju gratis!"
     }
 ]
